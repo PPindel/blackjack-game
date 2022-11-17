@@ -1,0 +1,15 @@
+/* Global style */
+
+body {
+    background-color: slategray;
+}
+
+/* Heading */
+
+.heading {
+    text-align: center;
+}
+
+.logo {
+    height: 30px;
+}
