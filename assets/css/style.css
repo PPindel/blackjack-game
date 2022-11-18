@@ -2,6 +2,8 @@
 
 body {
     background-color: slategray;
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* Heading */
@@ -12,4 +14,34 @@ body {
 
 .logo {
     height: 30px;
+}
+
+/* Game area */
+
+.gameArea {
+    background-color: wheat;
+    padding: 1%;
+}
+
+.tableArea {
+    border: 5px solid;
+    border-color: black;
+    margin: 5px 0px;
+    display: flex;
+}
+
+.cards {
+    padding: 20px 10px;
+    background-color: white;
+    border: 3px solid;
+    width: 120px;
+    height: 160px;
+    margin: 30px 30px;
+}
+
+.cards > p {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
 }
