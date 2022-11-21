@@ -20,22 +20,19 @@ let deck = [two, two, two, two, three, three, three, three, four, four, four, fo
     eight, eight, eight, eight, nine, nine, nine, nine, ten, ten, ten, ten, jack, jack, jack, jack, queen, queen, queen, queen, king, king, king, king, ace, ace, ace, ace
 ];
 
-document.addEventListener("DOMContentLoaded", runGame());
+document.addEventListener("DOMContentLoaded", runGame);
 
 function runGame() {
 
     shuffle();
-    let userTable = document.getElementById("user").innerHTML;
-    userTable += `
-    <div class="cards"><p>${deck[51]}</p></div>
-    <div class="cards"><p>${deck[49]}</p></div>`
-    document.getElementById("user").innerHTML = userTable;
 
-    let cpuTable = document.getElementById("cpu").innerHTML;
-    cpuTable += `
+    document.getElementById("user").innerHTML = `
+    <div class="cards"><p>${deck[51]}</p></div>
+    <div class="cards"><p>${deck[49]}</p></div>`;
+
+    document.getElementById("cpu").innerHTML = `
     <div class="cards"><p>${deck[50]}</p></div>
-    <div class="cards"><p>${deck[48]}</p></div>`
-    document.getElementById("cpu").innerHTML = cpuTable;
+    <div class="cards"><p>${deck[48]}</p></div>`;
 
 }
 
@@ -62,3 +59,6 @@ hitButton.addEventListener("click", function () {
     document.getElementById("cpu").innerHTML = cpuTable;
     i = i + 2;
 });
+
+let stayButton = document.getElementById("stay");
+stayButton.addEventListener("click", runGame);
