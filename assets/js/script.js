@@ -14,11 +14,28 @@ let queen = parseInt(10);
 let king = parseInt(10);
 let ace = parseInt(11);
 
+let i = 0;
+
 let deck = [two, two, two, two, three, three, three, three, four, four, four, four, five, five, five, five, six, six, six, six, seven, seven, seven, seven,
     eight, eight, eight, eight, nine, nine, nine, nine, ten, ten, ten, ten, jack, jack, jack, jack, queen, queen, queen, queen, king, king, king, king, ace, ace, ace, ace
 ];
 
+document.addEventListener("DOMContentLoaded", runGame());
+
 function runGame() {
+
+    shuffle();
+    let userTable = document.getElementById("user").innerHTML;
+    userTable += `
+    <div class="cards"><p>${deck[51]}</p></div>
+    <div class="cards"><p>${deck[49]}</p></div>`
+    document.getElementById("user").innerHTML = userTable;
+
+    let cpuTable = document.getElementById("cpu").innerHTML;
+    cpuTable += `
+    <div class="cards"><p>${deck[50]}</p></div>
+    <div class="cards"><p>${deck[48]}</p></div>`
+    document.getElementById("cpu").innerHTML = cpuTable;
 
 }
 
@@ -33,15 +50,15 @@ let hitButton = document.getElementById("hit");
 hitButton.addEventListener("click", function () {
 
     let userTable = document.getElementById("user").innerHTML;
-    shuffle();
-    newUserCard = deck[0];
+    let newUserCard = deck[i];
     userTable += `
     <div class="cards"><p>${newUserCard}</p></div>`
     document.getElementById("user").innerHTML = userTable;
 
     let cpuTable = document.getElementById("cpu").innerHTML;
+    let newCpuCard = deck[i + 1];
     cpuTable += `
-    <div class="cards"><p>?</p></div>`
-    document.getElementById("cpu").innerHTML = userTable;
-
+    <div class="cards"><p>${newCpuCard}</p></div>`
+    document.getElementById("cpu").innerHTML = cpuTable;
+    i = i + 2;
 });
