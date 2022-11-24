@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", runGame);
 
 function runGame() {
 
+    hitButton.style.display = "inline";
+    stayButton.style.display = "inline";
     shuffle();
     userScore = 0;
     cpuScore = 0;
@@ -63,10 +65,12 @@ function checkResult() {
 
     if ((userScore > cpuScore) || (cpuScore > 21)) {
         alert("You win!");
+        incrementUserPoints();
     } else if (userScore === cpuScore) {
         alert("Draw!");
     } else {
         alert("Computer wins!");
+        incrementCpuPoints();
     }
 }
 
@@ -90,21 +94,35 @@ function cpuDraw() {
     i++;
 }
 
+function incrementUserPoints() {
+    let userPoints = parseInt(document.getElementById("userPoints").innerText);
+    document.getElementById("userPoints").innerText = ++userPoints;
+}
+
+function incrementCpuPoints() {
+    let cpuPoints = parseInt(document.getElementById("cpuPoints").innerText);
+    document.getElementById("cpuPoints").innerText = ++cpuPoints;
+}
+
 /* adding more cards after clik hit button */
 let hitButton = document.getElementById("hit");
-hitButton.addEventListener("click", function(){
+hitButton.addEventListener("click", function () {
     drawCards();
     let userScore = 0;
     for (let e = 0; e < currentUserCards.length; e++) {
         userScore += parseInt(currentUserCards[e]);
         if (userScore > 21) {
+            document.getElementById("questionMark").innerHTML = `<p>${deck[50]}</p>`;
             alert("Bust!");
+            incrementCpuPoints();
+            hitButton.style.display = "none";
+            stayButton.style.display = "none";
         }
     }
 });
 
 let stayButton = document.getElementById("stay");
-stayButton.addEventListener("click", function() {
+stayButton.addEventListener("click", function () {
     document.getElementById("questionMark").innerHTML = `<p>${deck[50]}</p>`;
     let userScore = 0;
     for (let e = 0; e < currentUserCards.length; e++) {
@@ -112,12 +130,12 @@ stayButton.addEventListener("click", function() {
     }
     let cpuScore = parseInt(currentCpuCards[0]) + parseInt(currentCpuCards[1]);
     while (cpuScore < userScore) {
-        for (let f = 0; f < currentCpuCards.length; f++) {
-            cpuScore += parseInt(currentCpuCards[f]);
-        }
         cpuDraw();
+        cpuScore += parseInt(currentCpuCards[(currentCpuCards.length - 1)]);
     }
     checkResult();
+    hitButton.style.display = "none";
+    stayButton.style.display = "none";
 });
 
 let newGameButton = document.getElementById("newGame");
