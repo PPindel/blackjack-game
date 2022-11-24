@@ -61,7 +61,7 @@ function checkResult() {
     }
     console.log("CPU score: " + cpuScore);
 
-    if (userScore > cpuScore && userScore < 22) {
+    if ((userScore > cpuScore) || (cpuScore > 21)) {
         alert("You win!");
     } else if (userScore === cpuScore) {
         alert("Draw!");
@@ -77,23 +77,46 @@ function drawCards() {
     userTable += `
     <div class="cards"><p>${newUserCard}</p></div>`
     document.getElementById("user").innerHTML = userTable;
+    i++;
+}
 
+function cpuDraw() {
     let cpuTable = document.getElementById("cpu").innerHTML;
     let newCpuCard = deck[i + 1];
     currentCpuCards.push(newCpuCard);
     cpuTable += `
     <div class="cards"><p>${newCpuCard}</p></div>`
     document.getElementById("cpu").innerHTML = cpuTable;
-    i = i + 2;
+    i++;
 }
 
 /* adding more cards after clik hit button */
 let hitButton = document.getElementById("hit");
-hitButton.addEventListener("click", drawCards);
+hitButton.addEventListener("click", function(){
+    drawCards();
+    let userScore = 0;
+    for (let e = 0; e < currentUserCards.length; e++) {
+        userScore += parseInt(currentUserCards[e]);
+        if (userScore > 21) {
+            alert("Bust!");
+        }
+    }
+});
 
 let stayButton = document.getElementById("stay");
-stayButton.addEventListener("click", function(){
+stayButton.addEventListener("click", function() {
     document.getElementById("questionMark").innerHTML = `<p>${deck[50]}</p>`;
+    let userScore = 0;
+    for (let e = 0; e < currentUserCards.length; e++) {
+        userScore += parseInt(currentUserCards[e]);
+    }
+    let cpuScore = parseInt(currentCpuCards[0]) + parseInt(currentCpuCards[1]);
+    while (cpuScore < userScore) {
+        for (let f = 0; f < currentCpuCards.length; f++) {
+            cpuScore += parseInt(currentCpuCards[f]);
+        }
+        cpuDraw();
+    }
     checkResult();
 });
 
