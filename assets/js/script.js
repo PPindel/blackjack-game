@@ -104,10 +104,7 @@ function incrementCpuPoints() {
     document.getElementById("cpuPoints").innerText = ++cpuPoints;
 }
 
-/* adding more cards after clik hit button */
-let hitButton = document.getElementById("hit");
-hitButton.addEventListener("click", function () {
-    drawCards();
+function checkBust() {
     let userScore = 0;
     for (let e = 0; e < currentUserCards.length; e++) {
         userScore += parseInt(currentUserCards[e]);
@@ -119,10 +116,9 @@ hitButton.addEventListener("click", function () {
             stayButton.style.display = "none";
         }
     }
-});
+}
 
-let stayButton = document.getElementById("stay");
-stayButton.addEventListener("click", function () {
+function stayButtonAction() {
     document.getElementById("questionMark").innerHTML = `<p>${deck[50]}</p>`;
     let userScore = 0;
     for (let e = 0; e < currentUserCards.length; e++) {
@@ -136,7 +132,17 @@ stayButton.addEventListener("click", function () {
     checkResult();
     hitButton.style.display = "none";
     stayButton.style.display = "none";
+}
+
+/* button listeners below */
+let hitButton = document.getElementById("hit");
+hitButton.addEventListener("click", function () {
+    drawCards();
+    checkBust();
 });
+
+let stayButton = document.getElementById("stay");
+stayButton.addEventListener("click", stayButtonAction);
 
 let newGameButton = document.getElementById("newGame");
 newGameButton.addEventListener("click", runGame);
