@@ -39,9 +39,34 @@ body {
     margin: 30px 30px;
 }
 
-.cards > p {
+/*.cards > p {
     font-size: 3.5rem;
     font-weight: bold;
     text-align: center;
     line-height: 40px;
+}*/
+
+.topLeft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -14%;
+}
+
+.suite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.bottomRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 2rem;
+    font-weight: bold;
 }

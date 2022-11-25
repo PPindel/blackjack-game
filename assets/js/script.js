@@ -1,4 +1,4 @@
-/* global variables below */
+/* global variables below 
 
 let two = parseInt(2);
 let three = parseInt(3);
@@ -16,7 +16,166 @@ let ace = parseInt(11);
 
 let deck = [two, two, two, two, three, three, three, three, four, four, four, four, five, five, five, five, six, six, six, six, seven, seven, seven, seven,
     eight, eight, eight, eight, nine, nine, nine, nine, ten, ten, ten, ten, jack, jack, jack, jack, queen, queen, queen, queen, king, king, king, king, ace, ace, ace, ace
-];
+]; */
+
+let fullDeck = [
+    {rank: "2",
+    suite: `<i class="fa-solid fa-clover"></i>`,
+    value: parseInt(2)},
+    {rank: "3",
+    suite: `<i class="fa-solid fa-clover"></i>`,
+    value: parseInt(3)},
+    {rank: "4",
+    suite: `<i class="fa-solid fa-clover"></i>`,
+    value: parseInt(4)},
+    {rank: "5",
+    suite: `<i class="fa-solid fa-clover"></i>`,
+    value: parseInt(5)},
+    {rank: "6",
+    suite: `<i class="fa-solid fa-clover"></i>`,
+    value: parseInt(6)},
+    {rank: "7",
+    suite: `<i class="fa-solid fa-clover"></i>`,
+    value: parseInt(7)},
+    {rank: "8",
+    suite: `<i class="fa-solid fa-clover"></i>`,
+    value: parseInt(8)},
+    {rank: "9",
+    suite: `<i class="fa-solid fa-clover"></i>`,
+    value: parseInt(9)},
+    {rank: "10",
+    suite: `<i class="fa-solid fa-clover"></i>`,
+    value: parseInt(10)},
+    {rank: "J",
+    suite: `<i class="fa-solid fa-clover"></i>`,
+    value: parseInt(10)},
+    {rank: "Q",
+    suite: `<i class="fa-solid fa-clover"></i>`,
+    value: parseInt(10)},
+    {rank: "K",
+    suite: `<i class="fa-solid fa-clover"></i>`,
+    value: parseInt(10)},
+    {rank: "A",
+    suite: `<i class="fa-solid fa-clover"></i>`,
+    value: parseInt(11)},
+    {rank: "2",
+    suite: `<i class="fa-solid fa-heart"></i></i>`,
+    value: parseInt(2)},
+    {rank: "3",
+    suite: `<i class="fa-solid fa-heart"></i>`,
+    value: parseInt(3)},
+    {rank: "4",
+    suite: `<i class="fa-solid fa-heart"></i>`,
+    value: parseInt(4)},
+    {rank: "5",
+    suite: `<i class="fa-solid fa-heart"></i>`,
+    value: parseInt(5)},
+    {rank: "6",
+    suite: `<i class="fa-solid fa-heart"></i>`,
+    value: parseInt(6)},
+    {rank: "7",
+    suite: `<i class="fa-solid fa-heart"></i>`,
+    value: parseInt(7)},
+    {rank: "8",
+    suite: `<i class="fa-solid fa-heart"></i>`,
+    value: parseInt(8)},
+    {rank: "9",
+    suite: `<i class="fa-solid fa-heart"></i>`,
+    value: parseInt(9)},
+    {rank: "10",
+    suite: `<i class="fa-solid fa-heart"></i>`,
+    value: parseInt(10)},
+    {rank: "J",
+    suite: `<i class="fa-solid fa-heart"></i>`,
+    value: parseInt(10)},
+    {rank: "Q",
+    suite: `<i class="fa-solid fa-heart"></i>`,
+    value: parseInt(10)},
+    {rank: "K",
+    suite: `<i class="fa-solid fa-heart"></i>`,
+    value: parseInt(10)},
+    {rank: "A",
+    suite: `<i class="fa-solid fa-heart"></i>`,
+    value: parseInt(11)},
+    {rank: "2",
+    suite: `<i class="fa-solid fa-diamond"></i>`,
+    value: parseInt(2)},
+    {rank: "3",
+    suite: `<i class="fa-solid fa-diamond"></i>`,
+    value: parseInt(3)},
+    {rank: "4",
+    suite: `<i class="fa-solid fa-diamond"></i>`,
+    value: parseInt(4)},
+    {rank: "5",
+    suite: `<i class="fa-solid fa-diamond"></i>`,
+    value: parseInt(5)},
+    {rank: "6",
+    suite: `<i class="fa-solid fa-diamond"></i>`,
+    value: parseInt(6)},
+    {rank: "7",
+    suite: `<i class="fa-solid fa-diamond"></i>`,
+    value: parseInt(7)},
+    {rank: "8",
+    suite: `<i class="fa-solid fa-diamond"></i>`,
+    value: parseInt(8)},
+    {rank: "9",
+    suite: `<i class="fa-solid fa-diamond"></i>`,
+    value: parseInt(9)},
+    {rank: "10",
+    suite: `<i class="fa-solid fa-diamond"></i>`,
+    value: parseInt(10)},
+    {rank: "J",
+    suite: `<i class="fa-solid fa-diamond"></i>`,
+    value: parseInt(10)},
+    {rank: "Q",
+    suite: `<i class="fa-solid fa-diamond"></i>`,
+    value: parseInt(10)},
+    {rank: "K",
+    suite: `<i class="fa-solid fa-diamond"></i>`,
+    value: parseInt(10)},
+    {rank: "A",
+    suite: `<i class="fa-solid fa-diamond"></i>`,
+    value: parseInt(11)},
+    {rank: "2",
+    suite: `<i class="fa-brands fa-canadian-maple-leaf"></i>`,
+    value: parseInt(2)},
+    {rank: "3",
+    suite: `<i class="fa-brands fa-canadian-maple-leaf"></i>`,
+    value: parseInt(3)},
+    {rank: "4",
+    suite: `<i class="fa-brands fa-canadian-maple-leaf"></i>`,
+    value: parseInt(4)},
+    {rank: "5",
+    suite: `<i class="fa-brands fa-canadian-maple-leaf"></i>`,
+    value: parseInt(5)},
+    {rank: "6",
+    suite: `<i class="fa-brands fa-canadian-maple-leaf"></i>`,
+    value: parseInt(6)},
+    {rank: "7",
+    suite: `<i class="fa-brands fa-canadian-maple-leaf"></i>`,
+    value: parseInt(7)},
+    {rank: "8",
+    suite: `<i class="fa-brands fa-canadian-maple-leaf"></i>`,
+    value: parseInt(8)},
+    {rank: "9",
+    suite: `<i class="fa-brands fa-canadian-maple-leaf"></i>`,
+    value: parseInt(9)},
+    {rank: "10",
+    suite: `<i class="fa-brands fa-canadian-maple-leaf"></i>`,
+    value: parseInt(10)},
+    {rank: "J",
+    suite: `<i class="fa-brands fa-canadian-maple-leaf"></i>`,
+    value: parseInt(10)},
+    {rank: "Q",
+    suite: `<i class="fa-brands fa-canadian-maple-leaf"></i>`,
+    value: parseInt(10)},
+    {rank: "K",
+    suite: `<i class="fa-brands fa-canadian-maple-leaf"></i>`,
+    value: parseInt(10)},
+    {rank: "A",
+    suite: `<i class="fa-brands fa-canadian-maple-leaf"></i>`,
+    value: parseInt(11)}
+]
 
 let i = 0;
 let currentUserCards = [];
@@ -33,20 +192,32 @@ function runGame() {
     cpuScore = 0;
 
     document.getElementById("user").innerHTML = `
-    <div class="cards"><p>${deck[51]}</p></div>
-    <div class="cards"><p>${deck[49]}</p></div>`;
-    currentUserCards = [deck[51], deck[49]];
+    <div class="cards">
+        <p class="topLeft">${fullDeck[51].rank}</p>
+        <p class="suite">${fullDeck[51].suite}</p>
+        <p class="bottomRight">${fullDeck[51].rank}</p>
+    </div>
+    <div class="cards">
+        <p class="topLeft">${fullDeck[49].rank}</p>
+        <p class="suite">${fullDeck[49].suite}</p>
+        <p class="bottomRight">${fullDeck[49].rank}</p>
+    </div>`;
+    currentUserCards = [fullDeck[51].value, fullDeck[49].value];
 
     document.getElementById("cpu").innerHTML = `
-    <div class="cards" id="questionMark"><p>?</p></div>
-    <div class="cards"><p>${deck[48]}</p></div>`;
-    currentCpuCards = [deck[50], deck[48]];
+    <div class="cards" id="questionMark"><p class="suite"><i class="fa-regular fa-circle-question"></i></p></div>
+    <div class="cards">
+        <p class="topLeft">${fullDeck[48].rank}</p>
+        <p class="suite">${fullDeck[48].suite}</p>
+        <p class="bottomRight">${fullDeck[48].rank}</p>
+    </div>`;
+    currentCpuCards = [fullDeck[50].value, fullDeck[48].value];
 
 }
 
 function shuffle() {
 
-    deck = deck.sort(() => Math.random() - 0.5);
+    fullDeck = fullDeck.sort(() => Math.random() - 0.5);
 
 }
 
@@ -76,20 +247,28 @@ function checkResult() {
 
 function drawCards() {
     let userTable = document.getElementById("user").innerHTML;
-    let newUserCard = deck[i];
+    let newUserCard = fullDeck[i].value;
     currentUserCards.push(newUserCard);
     userTable += `
-    <div class="cards"><p>${newUserCard}</p></div>`
+    <div class="cards">
+        <p class="topLeft">${fullDeck[i].rank}</p>
+        <p class="suite">${fullDeck[i].suite}</p>
+        <p class="bottomRight">${fullDeck[i].rank}</p>
+    </div>`
     document.getElementById("user").innerHTML = userTable;
     i++;
 }
 
 function cpuDraw() {
     let cpuTable = document.getElementById("cpu").innerHTML;
-    let newCpuCard = deck[i + 1];
+    let newCpuCard = fullDeck[i + 1].value;
     currentCpuCards.push(newCpuCard);
     cpuTable += `
-    <div class="cards"><p>${newCpuCard}</p></div>`
+    <div class="cards">
+        <p class="topLeft">${fullDeck[i + 1].rank}</p>
+        <p class="suite">${fullDeck[i + 1].suite}</p>
+        <p class="bottomRight">${fullDeck[i + 1].rank}</p>
+    </div>`
     document.getElementById("cpu").innerHTML = cpuTable;
     i++;
 }
@@ -109,7 +288,10 @@ function checkBust() {
     for (let e = 0; e < currentUserCards.length; e++) {
         userScore += parseInt(currentUserCards[e]);
         if (userScore > 21) {
-            document.getElementById("questionMark").innerHTML = `<p>${deck[50]}</p>`;
+            document.getElementById("questionMark").innerHTML = `
+                <p class="topLeft">${fullDeck[50].rank}</p>
+                <p class="suite">${fullDeck[50].suite}</p>
+                <p class="bottomRight">${fullDeck[50].rank}</p>`;
             alert("Bust!");
             incrementCpuPoints();
             hitButton.style.display = "none";
@@ -119,7 +301,10 @@ function checkBust() {
 }
 
 function stayButtonAction() {
-    document.getElementById("questionMark").innerHTML = `<p>${deck[50]}</p>`;
+    document.getElementById("questionMark").innerHTML = `
+        <p class="topLeft">${fullDeck[50].rank}</p>
+        <p class="suite">${fullDeck[50].suite}</p>
+        <p class="bottomRight">${fullDeck[50].rank}</p>`;
     let userScore = 0;
     for (let e = 0; e < currentUserCards.length; e++) {
         userScore += parseInt(currentUserCards[e]);
