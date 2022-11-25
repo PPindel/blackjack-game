@@ -70,3 +70,47 @@ body {
     font-size: 2rem;
     font-weight: bold;
 }
+
+/* --------- Media queries */
+
+@media (max-width: 800px) {
+    .cards {
+        width: 54px;
+        height: 80px;
+        margin: 15px 15px;
+    }
+
+    .topLeft {
+        font-size: 1rem;
+        margin-top: -14%;
+    }
+    
+    .suite {
+        font-size: 1.25rem;
+    }
+    
+    .bottomRight {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .cards {
+        width: 30px;
+        height: 50px;
+        margin: 9.75px 9.75px;
+    }
+
+    .topLeft {
+        font-size: 0.65rem;
+        margin-top: -18%;
+    }
+    
+    .suite {
+        font-size: 0.85rem;
+    }
+    
+    .bottomRight {
+        font-size: 0.65rem;
+    }
+}
