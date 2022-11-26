@@ -272,6 +272,7 @@ function runGame() {
 
     hitButton.style.display = "inline";
     stayButton.style.display = "inline";
+    newGameButton.style.display = "none";
     i = 0;
     shuffle();
 
@@ -421,6 +422,7 @@ function bust() {
     incrementCpuPoints();
     hitButton.style.display = "none";
     stayButton.style.display = "none";
+    newGameButton.style.display = "inline";
 }
 
 function stayButtonAction() {
@@ -435,23 +437,26 @@ function stayButtonAction() {
     let cpuScore = parseInt(currentCpuCards[0]) + parseInt(currentCpuCards[1]);
     while (cpuScore < userScore) {
         cpuDraw();
-        cpuScore += parseInt(currentCpuCards[(currentCpuCards.length - 1)]);
-        if (cpuScore > 21) {
+        if (cpuScore + parseInt(currentCpuCards[(currentCpuCards.length - 1)]) > 21) {
             for (let t = 0; t < currentCpuCards.length; t++) {
                 if (currentCpuCards[t] === 11) {
                     currentCpuCards[t] = 1;
                     cpuScore = 0;
-                    for (let r =0; r < currentCpuCards.length; r++) {
-                        cpuScore += parseInt(currentCpuCards[r]);
-                    }
                 }
             }
-        }
 
+            for (let r = 0; r < currentCpuCards.length; r++) {
+                cpuScore += parseInt(currentCpuCards[r]);
+            }
+
+        } else {
+            cpuScore += parseInt(currentCpuCards[(currentCpuCards.length - 1)]);
+        }
     }
     checkResult();
     hitButton.style.display = "none";
     stayButton.style.display = "none";
+    newGameButton.style.display = "inline";
 }
 
 /* button listeners below */
