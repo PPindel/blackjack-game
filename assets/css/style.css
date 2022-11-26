@@ -39,6 +39,12 @@ body {
     margin: 30px 30px;
 }
 
+#questionMarkStyle {
+    font-size: 500%;
+    font-weight: bold;
+    margin-top: 40%;
+}
+
 /*.cards > p {
     font-size: 3.5rem;
     font-weight: bold;
@@ -52,7 +58,7 @@ body {
     align-items: flex-start;
     font-size: 2rem;
     font-weight: bold;
-    margin-top: -14%;
+    margin-top: -16%;
 }
 
 .suite {
@@ -91,6 +97,10 @@ body {
     
     .bottomRight {
         font-size: 1rem;
+    }
+
+    #questionMarkStyle {
+        font-size: 200%;
     }
 }
 
