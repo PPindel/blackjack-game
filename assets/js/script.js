@@ -459,6 +459,15 @@ function stayButtonAction() {
     newGameButton.style.display = "inline";
 }
 
+function toggleInfo() {
+    let infoText = document.getElementById("instructions");
+    if (infoText.style.display === "block") {
+        infoText.style.display = "none";
+    } else {
+        infoText.style.display = "block";
+    }
+}
+
 /* button listeners below */
 let hitButton = document.getElementById("hit");
 hitButton.addEventListener("click", function () {
@@ -471,3 +480,6 @@ stayButton.addEventListener("click", stayButtonAction);
 
 let newGameButton = document.getElementById("newGame");
 newGameButton.addEventListener("click", runGame);
+
+let infoButton = document.getElementById("infoButton");
+infoButton.addEventListener("click", toggleInfo);

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple, relaxing Blackjack Game">
+    <meta name="keywords" content="blackjack game, cards game, casino game, car engine, 21 game">
 
     <!-- Favicon code below -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -36,14 +38,22 @@
         <div id="user" class="tableArea">
         </div>
         <div class="centerDiv">
-            <button class="buttons" id="hit">Hit</button>
-            <button class="buttons" id="stay">Stay</button>
+            <button title="Take another card" class="buttons" id="hit">Hit</button>
+            <button title="Take no more cards and check dealer's cards" class="buttons" id="stay">Stay</button>
             <button class="buttons" id="newGame">New Game</button>
         </div>
     </div>
     <div class="centerDiv" id="scoreArea">
         <p>Your points: <span id="userPoints">0</span></p>
         <p>Dealer points: <span id="cpuPoints">0</span></p>
+    </div>
+    <div>
+        <button type="button" id="infoButton">How to play</button>
+        <p id="instructions">Aim of the Blackjack Game is to get 21 or as close to as possible. Number cards have their
+            face value, jacks,
+            kings and queens are worth 10. Ace can be either 1 or 11 and the player who holds the ace gets to choose the
+            value of the card. The dealer and the player start with two cards. Hit to take another card or stay to
+            compare hands.</p>
     </div>
 
     <script src="assets/js/script.js"></script>
