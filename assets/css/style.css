@@ -22,6 +22,7 @@ body {
 /* Game area */
 
 .gameArea {
+    margin: 0.5%;
     background-color: #816C61;
     padding: 1%;
     border-radius: 10px;
@@ -90,6 +91,7 @@ body {
 }
 
 #infoButton {
+    margin-left: 1%;
     padding: 1% 2%;
     border-radius: 10px;
     font-family: 'Electrolize', sans-serif;
@@ -110,14 +112,8 @@ body {
 #instructions {
     display: none;
     font-size: 110%;
+    padding: 2%;
 }
-
-/*.cards > p {
-    font-size: 3.5rem;
-    font-weight: bold;
-    text-align: center;
-    line-height: 40px;
-}*/
 
 /* cards layout */
 
@@ -172,6 +168,16 @@ body {
         font-size: 1rem;
     }
 
+    .buttons {
+        height: 2.5rem;
+        width: 6rem;
+        font-size: large;
+    }
+
+    #scoreArea {
+        font-size: medium;
+    }
+
     #questionMarkStyle {
         font-size: 200%;
     }
@@ -195,5 +201,9 @@ body {
 
     .bottomRight {
         font-size: 0.65rem;
+    }
+
+    #instructions {
+        font-size: 85%;
     }
 }
