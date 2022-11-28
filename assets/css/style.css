@@ -1,15 +1,18 @@
 /* Global style */
 
 body {
-    background-color: slategray;
+    background-color: #E7DFC6;
     max-width: 1200px;
     margin: auto;
+    font-family: 'Electrolize', sans-serif;
+    color: #131B23;
 }
 
 /* Heading */
 
 .heading {
     text-align: center;
+    font-family: 'Oleo Script', cursive;
 }
 
 .logo {
@@ -19,30 +22,56 @@ body {
 /* Game area */
 
 .gameArea {
-    background-color: wheat;
+    background-color: #816C61;
     padding: 1%;
+    border-radius: 10px;
 }
 
 .tableArea {
+    border-radius: 10px;
     border: 5px solid;
-    border-color: black;
+    border-color: #131B23;
     margin: 5px 0px;
     display: flex;
 }
 
 .cards {
     padding: 20px 10px;
-    background-color: white;
+    background-color: #E9F1F7;
     border: 3px solid;
     width: 108px;
     height: 160px;
     margin: 30px 30px;
+    border-radius: 10px;
 }
 
 #questionMarkStyle {
     font-size: 500%;
     font-weight: bold;
     margin-top: 40%;
+}
+
+.centerDiv {
+    text-align: center;
+}
+
+.centerDiv > p {
+    font-weight: bold;
+    color: #131B23;
+}
+
+#scoreArea {
+    font-size: x-large;
+}
+
+.buttons {
+    border-radius: 10px;
+    font-family: 'Electrolize', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    height: 4rem;
+    width: 10rem;
+    background-color: #E7DFC6;
 }
 
 /*.cards > p {
@@ -52,6 +81,8 @@ body {
     line-height: 40px;
 }*/
 
+/* cards layout */
+
 .topLeft {
     display: flex;
     justify-content: flex-start;
@@ -59,6 +90,7 @@ body {
     font-size: 2rem;
     font-weight: bold;
     margin-top: -16%;
+    color: #131B23;
 }
 
 .suite {
@@ -67,6 +99,7 @@ body {
     align-items: center;
     font-size: 2.5rem;
     font-weight: bold;
+    color: #2274A5;
 }
 
 .bottomRight {
@@ -75,6 +108,7 @@ body {
     align-items: flex-end;
     font-size: 2rem;
     font-weight: bold;
+    color: #131B23;
 }
 
 /* --------- Media queries */

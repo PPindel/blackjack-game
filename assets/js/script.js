@@ -336,7 +336,7 @@ function checkResult() {
     } else if (userScore === cpuScore) {
         alert("Draw!");
     } else {
-        alert("Computer wins!");
+        alert("Dealer wins!");
         incrementCpuPoints();
     }
 }
