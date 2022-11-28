@@ -331,12 +331,18 @@ function checkResult() {
     console.log("CPU score: " + cpuScore);
 
     if ((userScore > cpuScore) || (cpuScore > 21)) {
-        alert("You win!");
+        setTimeout(function () {
+            alert("You win!");
+        }, 500);
         incrementUserPoints();
     } else if (userScore === cpuScore) {
-        alert("Draw!");
+        setTimeout(function () {
+            alert("Draw!");
+        }, 500);
     } else {
-        alert("Dealer wins!");
+        setTimeout(function () {
+            alert("Dealer wins!");
+        }, 500);
         incrementCpuPoints();
     }
 }
@@ -414,7 +420,6 @@ function checkBust() {
 }
 
 function bust() {
-    alert("Bust!");
     document.getElementById("questionMark").innerHTML = `
         <p class="topLeft">${fullDeck[50].rank}</p>
         <p class="suite">${fullDeck[50].suite}</p>
@@ -423,6 +428,9 @@ function bust() {
     hitButton.style.display = "none";
     stayButton.style.display = "none";
     newGameButton.style.display = "inline";
+    setTimeout(function () {
+        alert("Bust");
+    }, 500);
 }
 
 function stayButtonAction() {

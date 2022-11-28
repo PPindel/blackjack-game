@@ -8,6 +8,11 @@ body {
     color: #131B23;
 }
 
+label {
+    font-weight: bold;
+    color: #E9F1F7;
+}
+
 /* Heading */
 
 .heading {
