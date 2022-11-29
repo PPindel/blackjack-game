@@ -259,7 +259,7 @@ let fullDeck = [{
         suite: `<i class="fa-brands fa-canadian-maple-leaf"></i>`,
         value: parseInt(11)
     }
-]
+];
 
 // global variables to control cards on pile and user's and dealer's hands
 let i = 0;
@@ -370,7 +370,7 @@ function drawCards() {
         <p class="topLeft">${fullDeck[i].rank}</p>
         <p class="suite">${fullDeck[i].suite}</p>
         <p class="bottomRight">${fullDeck[i].rank}</p>
-    </div>`
+    </div>`;
     document.getElementById("user").innerHTML = userTable;
     i++;
 
@@ -399,7 +399,7 @@ function cpuDraw() {
         <p class="topLeft">${fullDeck[i].rank}</p>
         <p class="suite">${fullDeck[i].suite}</p>
         <p class="bottomRight">${fullDeck[i].rank}</p>
-    </div>`
+    </div>`;
     document.getElementById("cpu").innerHTML = cpuTable;
     i++;
 }

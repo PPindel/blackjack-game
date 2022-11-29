@@ -8,11 +8,6 @@ body {
     color: #131B23;
 }
 
-label {
-    font-weight: bold;
-    color: #E9F1F7;
-}
-
 /* Heading */
 
 .heading {
@@ -31,6 +26,12 @@ label {
     background-color: #816C61;
     padding: 1%;
     border-radius: 10px;
+}
+
+
+.gameArea>p {
+    font-weight: bold;
+    color: #E9F1F7;
 }
 
 .tableArea {
