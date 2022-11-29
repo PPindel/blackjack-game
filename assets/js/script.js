@@ -1,5 +1,4 @@
-/* global variable below */
-
+// the full deck global variable
 let fullDeck = [{
         rank: "2",
         suite: `<i class="fa-solid fa-clover"></i>`,
@@ -262,12 +261,16 @@ let fullDeck = [{
     }
 ]
 
+// global variables to control cards on pile and user's and dealer's hands
 let i = 0;
 let currentUserCards = [];
 let currentCpuCards = [];
 
 document.addEventListener("DOMContentLoaded", runGame);
 
+/**
+ * The main game function activated at the start of each deal
+ */
 function runGame() {
 
     hitButton.style.display = "inline";
@@ -276,6 +279,7 @@ function runGame() {
     i = 0;
     shuffle();
 
+    // bust protection in case of 2 Aces at the start
     if (fullDeck[51].rank === "A" && fullDeck[49].rank === "A") {
         fullDeck[51].value = 1;
     }
@@ -311,25 +315,32 @@ function runGame() {
     currentCpuCards = [fullDeck[50].value, fullDeck[48].value];
 }
 
+/**
+ * Deck shuffle function using sord and Math.random function
+ */
 function shuffle() {
 
     fullDeck = fullDeck.sort(() => Math.random() - 0.5);
 
 }
 
+/**
+ * Comparing user's and dealer's results to check who wins
+ */
 function checkResult() {
     let userScore = 0;
     let cpuScore = 0;
     for (let c = 0; c < currentUserCards.length; c++) {
         userScore += parseInt(currentUserCards[c]);
     }
-    console.log("User score: " + userScore);
+    //console.log("User score: " + userScore); /* Testing */
 
     for (let d = 0; d < currentCpuCards.length; d++) {
         cpuScore += parseInt(currentCpuCards[d]);
     }
-    console.log("CPU score: " + cpuScore);
+    //console.log("CPU score: " + cpuScore); /* Testing */
 
+    //alert based on result
     if ((userScore > cpuScore) || (cpuScore > 21)) {
         setTimeout(function () {
             alert("You win!");
@@ -347,6 +358,9 @@ function checkResult() {
     }
 }
 
+/**
+ * Takes another card from pile to user's hand
+ */
 function drawCards() {
     let userTable = document.getElementById("user").innerHTML;
     let newUserCard = fullDeck[i].value;
@@ -373,6 +387,9 @@ function drawCards() {
     }
 }
 
+/**
+ * Takes another card from pile to dealer's hand
+ */
 function cpuDraw() {
     let cpuTable = document.getElementById("cpu").innerHTML;
     let newCpuCard = fullDeck[i].value;
@@ -385,31 +402,27 @@ function cpuDraw() {
     </div>`
     document.getElementById("cpu").innerHTML = cpuTable;
     i++;
-
-
-    let cpuScore = 0;
-    for (let u = 0; u < currentCpuCards.length; u++) {
-        cpuScore += parseInt(currentCpuCards[u]);
-        if (cpuScore > 21) {
-            for (let v = 0; v < currentCpuCards.length; v++) {
-                if (currentCpuCards[v] === 11) {
-                    currentCpuCards[v] = 1;
-                }
-            }
-        }
-    }
 }
 
+/**
+ * Increments user's score
+ */
 function incrementUserPoints() {
     let userPoints = parseInt(document.getElementById("userPoints").innerText);
     document.getElementById("userPoints").innerText = ++userPoints;
 }
 
+/**
+ * Increments dealer's score
+ */
 function incrementCpuPoints() {
     let cpuPoints = parseInt(document.getElementById("cpuPoints").innerText);
     document.getElementById("cpuPoints").innerText = ++cpuPoints;
 }
 
+/**
+ * Bust check - if the user's hand points are over 21 dealer's win
+ */
 function checkBust() {
     let userScore = 0;
     for (let e = 0; e < currentUserCards.length; e++) {
@@ -420,6 +433,9 @@ function checkBust() {
     }
 }
 
+/**
+ * The hidden card is revealed and user's lost
+ */
 function bust() {
     document.getElementById("questionMark").innerHTML = `
         <p class="topLeft">${fullDeck[50].rank}</p>
@@ -434,6 +450,9 @@ function bust() {
     }, 500);
 }
 
+/**
+ * When user is taking no more cards, computer compares the hands and drawing cards until win, draw or bust
+ */
 function stayButtonAction() {
     document.getElementById("questionMark").innerHTML = `
         <p class="topLeft">${fullDeck[50].rank}</p>
@@ -468,6 +487,9 @@ function stayButtonAction() {
     newGameButton.style.display = "inline";
 }
 
+/**
+ * Toggles on instructions how to play the game
+ */
 function toggleInfo() {
     let infoText = document.getElementById("instructions");
     if (infoText.style.display === "block") {
@@ -477,7 +499,7 @@ function toggleInfo() {
     }
 }
 
-/* button listeners below */
+// Button listeners
 let hitButton = document.getElementById("hit");
 hitButton.addEventListener("click", function () {
     drawCards();

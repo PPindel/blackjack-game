@@ -1,4 +1,4 @@
-/* Global style */
+/* Global styles */
 
 body {
     background-color: #E7DFC6;
@@ -41,22 +41,6 @@ label {
     display: flex;
 }
 
-.cards {
-    padding: 20px 10px;
-    background-color: #E9F1F7;
-    border: 3px solid;
-    width: 108px;
-    height: 160px;
-    margin: 30px 30px;
-    border-radius: 10px;
-}
-
-#questionMarkStyle {
-    font-size: 500%;
-    font-weight: bold;
-    margin-top: 40%;
-}
-
 .centerDiv {
     text-align: center;
 }
@@ -73,6 +57,8 @@ label {
 #scoreArea {
     font-size: x-large;
 }
+
+/* Buttons style */
 
 .buttons {
     border-radius: 10px;
@@ -121,7 +107,23 @@ label {
     padding: 2%;
 }
 
-/* cards layout */
+/* Cards layout */
+
+.cards {
+    padding: 20px 10px;
+    background-color: #E9F1F7;
+    border: 3px solid;
+    width: 108px;
+    height: 160px;
+    margin: 30px 30px;
+    border-radius: 10px;
+}
+
+#questionMarkStyle {
+    font-size: 500%;
+    font-weight: bold;
+    margin-top: 40%;
+}
 
 .topLeft {
     display: flex;
@@ -142,7 +144,8 @@ label {
     color: #131B23;
 }
 
-.fa-diamond, .fa-heart {
+.fa-diamond,
+.fa-heart {
     color: #A31621;
 }
 
@@ -157,6 +160,7 @@ label {
 
 /* --------- Media queries */
 
+/* --------- Tablets */
 @media (max-width: 800px) {
     .cards {
         width: 54px;
@@ -193,6 +197,7 @@ label {
     }
 }
 
+/* --------- Mobile phones */
 @media (max-width: 460px) {
     .cards {
         width: 30px;

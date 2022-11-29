@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,16 +23,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Oleo+Script&display=swap" rel="stylesheet">
 
+    <!-- Stylesheet link -->
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Blackjack Game</title>
+
 </head>
 
 <body>
 
+    <!-- Heading and logo -->
     <h1 class="heading">
         <img class="logo" src="assets/images/ace-min.jpg" alt="Ace of spades card"> Blackjack Game
     </h1>
 
+    <!-- Game table -->
     <div class="gameArea">
         <label for="cpu">Dealer's hand <i class="fa-regular fa-hand-point-down"></i></label>
         <div id="cpu" class="tableArea">
@@ -45,10 +51,14 @@
             <button class="buttons" id="newGame">New Game</button>
         </div>
     </div>
+
+    <!-- Score area -->
     <div class="centerDiv" id="scoreArea">
         <p>Your points: <span id="userPoints">0</span></p>
         <p>Dealer points: <span id="cpuPoints">0</span></p>
     </div>
+
+    <!-- How to play section -->
     <div>
         <button type="button" id="infoButton">How to play</button>
         <p id="instructions">Aim of the Blackjack Game is to get 21 or as close to as possible. Number cards have their
@@ -58,7 +68,16 @@
             compare hands.</p>
     </div>
 
+    <!-- Footer -->
+    <footer>
+        <div class="centerDiv">
+            <span>Designed by P. Pindel <i class="fa-regular fa-registered"></i></span>
+        </div>
+    </footer>
+
+    <!-- JS scripts link -->
     <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
