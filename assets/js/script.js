@@ -386,6 +386,7 @@ function cpuDraw() {
     document.getElementById("cpu").innerHTML = cpuTable;
     i++;
 
+
     let cpuScore = 0;
     for (let u = 0; u < currentCpuCards.length; u++) {
         cpuScore += parseInt(currentCpuCards[u]);

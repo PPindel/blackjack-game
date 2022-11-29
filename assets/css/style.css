@@ -81,6 +81,7 @@ label {
     font-weight: bold;
     height: 4rem;
     width: 10rem;
+    color: #131B23;
     background-color: #E7DFC6;
     font-size: x-large;
     margin: 10px;
@@ -139,6 +140,10 @@ label {
     font-size: 2.5rem;
     font-weight: bold;
     color: #131B23;
+}
+
+.fa-diamond, .fa-heart {
+    color: #A31621;
 }
 
 .bottomRight {
