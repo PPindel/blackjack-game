@@ -86,7 +86,7 @@ body {
 }
 
 #infoButton {
-    margin-left: 1%;
+    margin-left: 2%;
     padding: 1% 2%;
     border-radius: 10px;
     font-family: 'Electrolize', sans-serif;
@@ -108,6 +108,10 @@ body {
     display: none;
     font-size: 110%;
     padding: 2%;
+}
+
+footer {
+    margin-top: 3%;
 }
 
 /* Cards layout */
