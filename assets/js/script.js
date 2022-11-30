@@ -304,6 +304,7 @@ function runGame() {
             <p class="bottomRight">${fullDeck[49].rank}</p>
         </div>`;
     currentUserCards = [fullDeck[51].value, fullDeck[49].value];
+    document.getElementById("userHand").innerHTML = fullDeck[51].value + fullDeck[49].value;
 
     document.getElementById("cpu").innerHTML = `
         <div class="cards" id="questionMark"><p id="questionMarkStyle" class="suite"><i class="fa-regular fa-circle-question"></i></p></div>
@@ -313,6 +314,7 @@ function runGame() {
             <p class="bottomRight">${fullDeck[48].rank}</p>
         </div>`;
     currentCpuCards = [fullDeck[50].value, fullDeck[48].value];
+    document.getElementById("cpuHand").innerHTML = `? + ${fullDeck[48].value}`;
 }
 
 /**
@@ -334,11 +336,13 @@ function checkResult() {
         userScore += parseInt(currentUserCards[c]);
     }
     //console.log("User score: " + userScore); /* Testing */
+    document.getElementById("userHand").innerHTML = userScore;
 
     for (let d = 0; d < currentCpuCards.length; d++) {
         cpuScore += parseInt(currentCpuCards[d]);
     }
     //console.log("CPU score: " + cpuScore); /* Testing */
+    document.getElementById("cpuHand").innerHTML = cpuScore;
 
     //alert based on result
     if ((userScore > cpuScore) || (cpuScore > 21)) {
@@ -377,10 +381,16 @@ function drawCards() {
     let userScore = 0;
     for (let x = 0; x < currentUserCards.length; x++) {
         userScore += parseInt(currentUserCards[x]);
+        document.getElementById("userHand").innerHTML = userScore;
         if (userScore > 21) {
             for (let y = 0; y < currentUserCards.length; y++) {
                 if (currentUserCards[y] === 11) {
                     currentUserCards[y] = 1;
+                    let userScore = 0;
+                    for (let h = 0; h < currentUserCards.length; h++) {
+                        userScore += parseInt(currentUserCards[h]);
+                        document.getElementById("userHand").innerHTML = userScore;
+                    }
                 }
             }
         }
@@ -441,6 +451,8 @@ function bust() {
         <p class="topLeft">${fullDeck[50].rank}</p>
         <p class="suite">${fullDeck[50].suite}</p>
         <p class="bottomRight">${fullDeck[50].rank}</p>`;
+
+    document.getElementById("cpuHand").innerHTML = fullDeck[50].value + fullDeck[48].value;
     incrementCpuPoints();
     hitButton.style.display = "none";
     stayButton.style.display = "none";
