@@ -31,7 +31,8 @@ body {
 
 .gameArea>p {
     font-weight: bold;
-    color: #E9F1F7;
+    font-size: larger;
+    color: #131B23;
 }
 
 .tableArea {
@@ -53,6 +54,7 @@ body {
 
 .centerDiv span {
     color: #2274A5;
+    font-size: x-large;
 }
 
 #scoreArea {

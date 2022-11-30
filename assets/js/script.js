@@ -315,7 +315,7 @@ function runGame() {
             <p class="bottomRight">${fullDeck[48].rank}</p>
         </div>`;
     currentCpuCards = [fullDeck[50].value, fullDeck[48].value];
-    document.getElementById("cpuHand").innerHTML = `? + ${fullDeck[48].value}`;
+    document.getElementById("cpuHand").innerHTML = `<i class="fa-solid fa-question"></i> + ${fullDeck[48].value}`;
 }
 
 /**
