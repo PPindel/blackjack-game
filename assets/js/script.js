@@ -276,6 +276,7 @@ function runGame() {
     hitButton.style.display = "inline";
     stayButton.style.display = "inline";
     newGameButton.style.display = "none";
+    document.getElementById("hit").focus();
     i = 0;
     shuffle();
 
@@ -457,6 +458,7 @@ function bust() {
     hitButton.style.display = "none";
     stayButton.style.display = "none";
     newGameButton.style.display = "inline";
+    document.getElementById("newGame").focus();
     setTimeout(function () {
         alert("Bust");
     }, 500);
@@ -497,6 +499,7 @@ function stayButtonAction() {
     hitButton.style.display = "none";
     stayButton.style.display = "none";
     newGameButton.style.display = "inline";
+    document.getElementById("newGame").focus();
 }
 
 /**
