@@ -68,7 +68,7 @@ body {
     font-family: 'Electrolize', sans-serif;
     text-align: center;
     font-weight: bold;
-    height: 4rem;
+    height: 3rem;
     width: 10rem;
     color: #131B23;
     background-color: #E7DFC6;
@@ -87,7 +87,7 @@ body {
 
 #infoButton {
     margin-left: 2%;
-    padding: 1% 2%;
+    padding: 1% 1%;
     border-radius: 10px;
     font-family: 'Electrolize', sans-serif;
     text-align: center;
@@ -107,11 +107,11 @@ body {
 #instructions {
     display: none;
     font-size: 110%;
-    padding: 2%;
+    padding: 1%;
 }
 
 footer {
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 /* Cards layout */
@@ -120,9 +120,9 @@ footer {
     padding: 20px 10px;
     background-color: #E9F1F7;
     border: 3px solid;
-    width: 108px;
+    width: 98px;
     height: 160px;
-    margin: 30px 30px;
+    margin: 20px 20px;
     border-radius: 10px;
 }
 
