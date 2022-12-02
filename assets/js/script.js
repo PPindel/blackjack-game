@@ -323,6 +323,12 @@ function runGame() {
  */
 function shuffle() {
 
+    for (let card = 0; card < fullDeck.length; card++) {
+        if (fullDeck[card].rank === "A") {
+            fullDeck[card].value = 11;
+        }
+    }
+
     fullDeck = fullDeck.sort(() => Math.random() - 0.5);
 
 }
