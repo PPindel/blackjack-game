@@ -323,6 +323,7 @@ function runGame() {
  */
 function shuffle() {
 
+    //important loop to put Ace value back to 11 after taking 2 Aces at the start
     for (let card = 0; card < fullDeck.length; card++) {
         if (fullDeck[card].rank === "A") {
             fullDeck[card].value = 11;
