@@ -17,43 +17,12 @@ Blackjack Game is just a simple, relaxing card game perfect for long winter even
 
 ## Table of Contents
 
-- [ENGINE BOOST GARAGE](#engine-boost-garage)
-- [Author](#author)
-- [Project Overview](#project-overview)
-  * [Table of Contents](#table-of-contents)
-  * [UX](#ux)
-    + [Project Goals](#project-goals)
-    + [User stories](#user-stories)
-    + [Design choices](#design-choices)
-      - [Colors](#colors)
-      - [Typography](#typography)
-      - [Images](#images)
-      - [Animations and Transitions](#animations-and-transitions)
-    + [Wireframes](#wireframes)
-    + [Features](#features)
-      - [Implemented Features](#implemented-features)
-      - [Future Features](#future-features)
-  * [Testing](#testing)
-    + [Validation Testing](#validation-testing)
-    + [Cross Browser and Cross Device Testing](#cross-browser-and-cross-device-testing)
-    + [Manual Testing](#manual-testing)
-    + [Defect Tracking](#defect-tracking)
-  * [Accessibility](#accessibility)
-    + [Lighthouse Audits](#lighthouse-audits)
-    + [Keyboard Navigation](#keyboard-navigation)
-  * [Deployment](#deployment)
-  * [Credits](#credits)
-    + [Content](#content)
-    + [Media](#media)
-    + [Acknowledgments](#acknowledgments)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 ## UX
 ### Project Goals
 
-As I mentioned before, the website design is not accidental. It refers to popular icons, fit into the subculture of the tuning world, and targets adult users. Also provides a professional, aesthetic look so every customer will enjoy the clear design of the site.
+Goal of this project is to provide relaxing entertament for a user. Nice to look warm design combined with classic card game.
 
 ### User stories
 
