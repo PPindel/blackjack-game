@@ -33,40 +33,48 @@
 <body>
 
     <!-- Heading and logo -->
-    <h1 class="heading">
-        <img class="logo" src="assets/images/ace-min.jpg" alt="Ace of spades card"> Blackjack Game
-    </h1>
+    <header>
+        <h1 class="heading">
+            <img class="logo" src="assets/images/ace-min.jpg" alt="Ace of spades card"> Blackjack Game
+        </h1>
+    </header>
 
     <!-- Game table -->
-    <div class="gameArea">
-        <p>Dealer's hand&emsp;<i class="fa-regular fa-hand-point-down"></i>&emsp;Current score: <span id="cpuHand"></span></p>
-        <div id="cpu" class="tableArea">
+    <section>
+        <div class="gameArea">
+            <p>Dealer's hand&emsp;<i class="fa-regular fa-hand-point-down"></i>&emsp;Current score: <span
+                    id="cpuHand"></span></p>
+            <div id="cpu" class="tableArea">
+            </div>
+            <p>Your hand&emsp;<i class="fa-regular fa-hand-point-down"></i>&emsp;Current score: <span
+                    id="userHand"></span></p>
+            <div id="user" class="tableArea">
+            </div>
+            <div class="centerDiv">
+                <button aria-label="The hit button" title="Take another card" class="buttons" id="hit">Hit</button>
+                <button aria-label="The stay button " title="Take no more cards and check dealer's cards"
+                    class="buttons" id="stay">Stay</button>
+                <button aria-label="The new gaame button" class="buttons" id="newGame">New Game</button>
+            </div>
         </div>
-        <p>Your hand&emsp;<i class="fa-regular fa-hand-point-down"></i>&emsp;Current score: <span id="userHand"></span></p>
-        <div id="user" class="tableArea">
-        </div>
-        <div class="centerDiv">
-            <button aria-label="The hit button" title="Take another card" class="buttons" id="hit">Hit</button>
-            <button aria-label="The stay button " title="Take no more cards and check dealer's cards" class="buttons" id="stay">Stay</button>
-            <button aria-label="The new gaame button" class="buttons" id="newGame">New Game</button>
-        </div>
-    </div>
 
-    <!-- Score area -->
-    <div class="centerDiv" id="scoreArea">
-        <p>Your points: <span id="userPoints">0</span></p>
-        <p>Dealer points: <span id="cpuPoints">0</span></p>
-    </div>
+        <!-- Score area -->
+        <div class="centerDiv" id="scoreArea">
+            <p>Your points: <span id="userPoints">0</span>&emsp;&emsp;Dealer's points: <span id="cpuPoints">0</span></p>
+        </div>
 
-    <!-- How to play section -->
-    <div>
-        <button type="button" id="infoButton">How to play</button>
-        <p id="instructions">Aim of the Blackjack Game is to get 21 or as close to as possible. Number cards have their
-            face value, jacks,
-            kings and queens are worth 10. Ace can be either 1 or 11 and the player who holds the ace gets to choose the
-            value of the card. The dealer and the player start with two cards. Hit to take another card or stay to
-            compare hands.</p>
-    </div>
+        <!-- How to play section -->
+        <div>
+            <button type="button" id="infoButton">How to play</button>
+            <p id="instructions">Aim of the Blackjack Game is to get 21 or as close to as possible. Number cards have
+                their
+                face value, jacks,
+                kings and queens are worth 10. Ace can be either 1 or 11 and the player who holds the ace gets to choose
+                the
+                value of the card. The dealer and the player start with two cards. Hit to take another card or stay to
+                compare hands.</p>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -76,6 +84,7 @@
     </footer>
 
     <!-- JS scripts link -->
+    <script src="assets/js/constants.js"></script>
     <script src="assets/js/script.js"></script>
 
 </body>

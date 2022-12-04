@@ -25,7 +25,6 @@ body {
     margin: 0.5%;
     background-color: #816C61;
     padding: 1%;
-    border-radius: 10px;
 }
 
 
@@ -167,65 +166,82 @@ footer {
 
 /* --------- Media queries */
 
-/* --------- Tablets */
-@media (max-width: 800px) {
-    .cards {
-        width: 54px;
-        height: 80px;
-        margin: 15px 15px;
-        border-radius: 5px;
+/*---------- Devices under 1200px */
+@media (max-width: 1200px) {
+    .gameArea {
+        background-color: #816C61;
+        padding: 1%;
     }
 
-    .topLeft {
-        font-size: 1rem;
-        margin-top: -14%;
-    }
-
-    .suite {
-        font-size: 1.25rem;
-    }
-
-    .bottomRight {
-        font-size: 1rem;
-    }
-
-    .buttons {
-        height: 2.5rem;
-        width: 7rem;
-        font-size: medium;
-    }
-
-    #scoreArea {
-        font-size: medium;
-    }
-
-    #questionMarkStyle {
-        font-size: 200%;
+    .tableArea {
+        border: 2px solid;
+        margin: 0;
     }
 }
 
-/* --------- Mobile phones */
-@media (max-width: 460px) {
-    .cards {
-        width: 30px;
-        height: 50px;
-        margin: 9.75px 9.75px;
+    /* --------- Tablets */
+    @media (max-width: 800px) {
+        .cards {
+            width: 54px;
+            height: 80px;
+            margin: 15px 15px;
+            border-radius: 5px;
+        }
+
+        .topLeft {
+            font-size: 1rem;
+            margin-top: -14%;
+        }
+
+        .suite {
+            font-size: 1.25rem;
+        }
+
+        .bottomRight {
+            font-size: 1rem;
+        }
+
+        .buttons {
+            height: 2.5rem;
+            width: 7rem;
+            font-size: medium;
+        }
+
+        #scoreArea {
+            font-size: medium;
+        }
+
+        #questionMarkStyle {
+            font-size: 200%;
+        }
     }
 
-    .topLeft {
-        font-size: 0.65rem;
-        margin-top: -18%;
-    }
+    /* --------- Mobile phones */
+    @media (max-width: 460px) {
+        .cards {
+            width: 25px;
+            height: 40px;
+            margin: 8.75px 8.75px;
+        }
 
-    .suite {
-        font-size: 0.85rem;
-    }
+        .topLeft {
+            font-size: 14px;
+            margin-top: -70%;
+        }
 
-    .bottomRight {
-        font-size: 0.65rem;
-    }
+        .suite {
+            font-size: 14px;
+        }
 
-    #instructions {
-        font-size: 85%;
+        .bottomRight {
+            font-size: 14px;
+        }
+
+        .gameArea>p {
+            font-size: 14px;
+        }
+
+        #instructions {
+            font-size: 14px;
+        }
     }
-}
