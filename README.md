@@ -24,292 +24,455 @@ Blackjack Game is just a simple, relaxing card game perfect for long winter even
 
 Goal of this project is to provide relaxing entertament for a user. Nice to look warm design combined with classic card game.
 
-### User stories
+# OVERVIEW
 
-As a customer I expect:
-- clear look
-- simply navigation
-- easy to read and functional content
-- the feeling of using a premium product
+This template was made as a guide to ensure you cover assessment criteria in your second milestone write up. It is specific to the **PORTFOLIO 2: Javascript Essentials** project. It was based off the [loves maths_readmd.md](https://github.com/Code-Institute-Solutions/readme-love-maths) with a few additions to help elevate you to possible distinction status.
 
-As a developer I expect:
-- easy to read code
-- hassle-free implementation of new features
-- simple adding of new content at the request of the owner
+Sections marked as 🚨**Required**  and 🚀 **merit & beyond**
 
-### Design choices
+**Please note** that project assessment criteria changes more often than these guides are updated so double-check the submission criteria before assuming the  🚨**Required**  is all you have to do to pass.
 
-#### Colors
+## Helpful tools
 
-Contrasting theme idea - street lamps illuminate the night.
+Markdown's not all that easy so sometimes you may want to use some tools to make tables. 
 
-![obraz](https://user-images.githubusercontent.com/114284732/196186138-eda054be-7458-4715-b204-16a321b68256.png)
+- [Markdown Cheatsheet](https://guides.github.com/features/mastering-markdown/)
+- [markdown table generator](https://www.tablesgenerator.com/markdown_tables) - used to help with documentation table formatting
+- [mardown table of contents generator](https://ecotrust-canada.github.io/markdown-toc/) - used to create table of contents (be weary it does have some bugs if you have dashes or trailing spaces in your headers)
+- [readme.so](https://readme.so/) - if you don't want to learn markdown, this tool might help you
 
-#### Typography
+# Table of Contents
+Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a table of contents.  This will help assessors to see the structure of your readme. Just test it out ast this tool isn't perfect. It tends to mess up with special characters like dashes.
 
-Exo, NTR - modern-looking fonts well reflecting the spirit of the content. A pairing recommendation is given by https://fontjoy.com/
+====================================== The Sections you Fill in are below ==============================
 
-![obraz](https://user-images.githubusercontent.com/114284732/195984131-8297294f-0247-42be-a26a-e2506bbf7ec8.png)
+# PROJECT NAME
+🚨**Required** 
 
-#### Images
+*replace the **PROJECT NAME** header with your project's name*
+- One or two paragraphs providing an overview of your project.
+- Write this as a sales pitch or commercial to entice users to interact with your site or how you want investors to purchase your website.
+- Include a picture of site that shows it in responsive states and links to deployed code: https://ui.dev/amiresponsive
 
-The selected images are supposed to affect the imagination and give the feeling of high speed, great power, and beauty of cult cars.
+## Live Site
+🚨**Required** 
 
-![obraz](https://user-images.githubusercontent.com/114284732/195984159-127b5db9-ee8e-40ed-9e11-e9e538798c65.png)
+- Include a link to deployed project (typically a GitHub Page on github.io)
 
-![obraz](https://user-images.githubusercontent.com/114284732/195984218-6c720091-bd6c-405b-8b2e-10945e9a17fc.png)
+## Repository
+🚨**Required** 
 
-![obraz](https://user-images.githubusercontent.com/114284732/195984280-261bf919-09e9-4ac1-9e5f-9fc947a53ae0.png)
+- Include a Link to the GitHub repository
 
-![obraz](https://user-images.githubusercontent.com/114284732/195984291-b9154ce6-2198-41e7-8e57-737befb25f17.png)
+## Author
+🚨**Required** 
 
-#### Animations and Transitions
+DEVELOPER_NAME (take credit for the work you do!)
 
-I didn't want to overwhelm the user with too many animation effects. In my opinion, it's very easy to distract a user from the main content by adding animations everywhere and finally it ends as a bad user experience. See below the effects I used:
+## Table of Contents
+🚀 **merit & beyond**
 
-- The current page is marked by underline
+Generate after readme is complete by copying and pasting your readme from this point & below into this tool:
+- [mardown table of contents generator](https://ecotrust-canada.github.io/markdown-toc/)
+**NOTE:** It does have some bugs if you have dashes or trailing spaces in your headers
 
-  ![obraz](https://user-images.githubusercontent.com/114284732/195984465-5da4950d-d984-4c7b-b743-27f341f66b1f.png)
+# UX
+🚀 **merit & beyond**
 
-- Hovering over the hyperlink element changes its color to yellow
 
-  ![obraz](https://user-images.githubusercontent.com/114284732/195984528-64bb7c24-ca48-441b-b0c9-620875a4f220.png)
+This particular section can be blank, it's just a wrapper for the child sections.
 
-- simply animation is added to social media icons
+The subsections provide insight into your UX process, focusing on why you made the user experience decisions you did. If the target audience and user base drove you to a certain look and feel call it out so the accessors can't be objective and say I don't like it. 
 
-  ![obraz](https://user-images.githubusercontent.com/114284732/195984602-33d5ecce-e159-485f-824a-8cd1eb1ade11.png) ![obraz](https://user-images.githubusercontent.com/114284732/195984612-97dee213-26d2-4899-b9c7-d1442865f0a0.png)
+## Target Audience
+🚀 **merit & beyond**
 
-### Wireframes
+Your site is most likely geared to a certain audience, and your design choices should tie into them, pay attention to age groups, genders, demographics, & interests of the people you are hoping to use your site. If it's everyone, say so.
 
-- Home page for desktop:
+## Project Goals
+🚀 **merit & beyond**
 
-  ![obraz](https://user-images.githubusercontent.com/114284732/195985585-af183e7f-86a9-494b-bf24-3260ea8c5867.png)
+Write bullet points of what this site is trying to achieve.  
+- This site presents X to Y with specific features.
+- Another completely valid project goal is building your skill set with a focus on JavaScript, HTML, and CSS :)
 
-- Home page for mobile:
+## User Stories
+🚀 **merit & beyond**
 
-  ![obraz](https://user-images.githubusercontent.com/114284732/196673803-3cb4fac0-47f2-4038-9434-5a557eb15676.png)
+This section lists outs as a X I want Y, so I can Z format. It helps drive out the features you will build.
 
-- Gallery:
+You can have many kinds of users so feel free to have one section or the subsections listed or more
 
-  ![obraz](https://user-images.githubusercontent.com/114284732/196673944-c77b7613-3235-4056-9e20-828d2d0fff27.png)
+### Site User Stories
+🚀 **merit & beyond**
 
-- Form:
+### Website Owner Stories
+🚀 **merit & beyond**
 
-  ![obraz](https://user-images.githubusercontent.com/114284732/196674086-de05a189-084c-494c-bb58-8ce9ce8bc3ac.png)
+### Developer Stories
+🚀 **merit & beyond**
 
-- Custom "thank you" and 404 error pages:
+## Design Choices
+🚀 **merit & beyond**
 
-  ![obraz](https://user-images.githubusercontent.com/114284732/196674224-4f5bd11c-259c-4789-8f46-2aa27ccc98d6.png)
+Your site is most likely geared to a certain audience, and your design choices should tie into them. Let the assessors know your thought process.
+
+
+You may want to re-watch the videos about the [5 planes of UX development ](https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/22905698f3be425d918ebc64c87801b7/9c295bdc5a4048308460e262b14ab7df/) when writing up this section
+
+### Typography
+🚀 **merit & beyond**
+
+- discuss font size, font types for headers vs buttons vs general text and how it ties into users' emotions or target audience.
+- Clarity of letters, putting a capital i next to a lower case L is always a good test
+- include screenshots of fonts used and links to the appropriate website ex) https://fonts.google.com/specimen/Raleway
+
+### Imagery
+🚀 **merit & beyond**
+
+Explain why you used certain icons and images on your site & tie it back into your target audience
+
+### Animations and Transitions
+🚀 **merit & beyond**
+
+- discuss any special animations or transitions you've included 
+- special hover state effects
+
+## Design Elements
+🚀 **merit & beyond**
+
+what are some of they key User Interactive elements and bits of functionally you will have on your site:
+tables, accordions, maps, videos, forms with inputs, text areas, select/dropdowns
+
+## Wireframes
+🚀 **merit & beyond**
+
+This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in a separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser. 
+
+Wireframes can be as simple as a picture of a drawing of how you envisioned laying out the information for you pages in desktop, tablet and mobile views. They are a roadmap and do not have to be 100% accurate of the final product. Or you can use the [Balsamiq](https://code-institute-room.slack.com/archives/C0L316Z96/p1640099614368000) tool that Code Institute provides students access to. 
+
+## mobile wireframes
+🚀 **merit & beyond**
+
+## tablet wireframes
+🚀 **merit & beyond**
+
+## desktop wireframes
+🚀 **merit & beyond**
+
 
 ### Features
+🚨**Required** 
 
-This project has implemented features:
-- home page with an about as section and a motto that reflects the spirit of being a car enthusiast
-- sticky nav bar after scrolling and fixed arrow in the bottom left corner to come back to the top
-- projects page which contains a gallery with finished modifications and projects
-- booking page contains a form where a user provides info about his car to get possible tuning options and dates available
-- successful form submission is confirmed by "thank you message"
-- custom 404 page
-- responsive design with layout changing sections for smaller devices
-- smooth scrolling
+In this section, you should go over the different parts of your project, and describe each in a sentence or so and how they tie into  your user stories.
 
-#### Implemented Features
+## Implemented Features
+🚨**Required** 
 
-- Favicon:
-    
-    ![obraz](https://user-images.githubusercontent.com/114284732/196194031-34c2e49f-4af0-41ac-b19a-f1d9ae4029c2.png)
+For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
-- Header:
+It's easiest to break this section down into the header, footer, and each page/layer of your website. Call out any differences for mobile vs desktop presentations, include a screenshot of the implemented feature.
 
-    all pages have the same header with the nav bar
-    
-    ![obraz](https://user-images.githubusercontent.com/114284732/196190106-a7a2514c-a7f6-4960-9b4d-de7a01d22344.png)
+Don't forget your 404 error page.
 
-- Sticky nav bar after scrolling down:
+## Future Features
+🚀 **merit & beyond**
 
-    ![obraz](https://user-images.githubusercontent.com/114284732/196190396-c940c899-c4cf-4cb2-b705-782c85147fef.png)
+Use this section to discuss plans for additional features to be implemented in the future
 
-    Navigates to the home page, projects gallery, and booking page.
-    The current site is marked with an underline.
+If you end up not developing some features you hoped to implement, you can include those in this section too.
 
-- Responsive about us section:
-
-    ![obraz](https://user-images.githubusercontent.com/114284732/195986817-d9c1c7bd-97a0-430f-bbe4-95c10cd3333b.png)
-    
-    Short and consistent info about the company and services provided - hides an image for smaller devices to improve readability
-    
-    ![obraz](https://user-images.githubusercontent.com/114284732/196192369-87b1429d-ff04-49ab-bfa0-fb8cf2bb3c49.png)
-
-- Responsive motto section:
-
-    ![obraz](https://user-images.githubusercontent.com/114284732/195986898-16500dd5-90cf-4f4e-8045-1a06c133785e.png)
-    
-    Image of a beautiful car with a quote from one of the most recognizable icons of the car world - Jeremy Clarkson.
-    This is not only business, this is our lifestyle. Display changes to block for devices under 1200px
-    
-    ![obraz](https://user-images.githubusercontent.com/114284732/196192486-ac42e987-6245-4aa9-a1e2-c1e63aabcc6f.png)
-
-- Address and footer:
-
-    ![obraz](https://user-images.githubusercontent.com/114284732/195987007-ccdec1ee-188d-4c5c-87d9-1a9ce37893dc.png)
-    
-    Address info on every page, a footer with stylized icons leading to social websites, and a small arrow in the bottom left of the page to easily go back to the top of the page with implemented smooth scrolling.
-
-- Gallery:
-
-    ![obraz](https://user-images.githubusercontent.com/114284732/195987111-70733fed-ddff-4043-8144-e81f0a421de7.png)
-    
-    Simple user and developer-friendly gallery. Readable, nice design and new projects can be added very quickly and easily.
-
-- Form
-
-    ![obraz](https://user-images.githubusercontent.com/114284732/195987157-6ce73cf6-dcba-42ec-96ec-34e8cd1bd471.png)
-    
-    Consistent form section with the cult car in the background. The button changes color on hover.
-    
-    ![obraz](https://user-images.githubusercontent.com/114284732/195987259-002a9853-5909-4eb4-8a0c-a535ba326f49.png)
-    
-- Thank you page:
-
-    ![obraz](https://user-images.githubusercontent.com/114284732/195987274-a76b543c-52e8-43dc-9364-7d8659ae26d9.png)
-    
-    Informs user about successful query submission.
-    
-- Custom 404 error page:
-
-    ![obraz](https://user-images.githubusercontent.com/114284732/196193826-2ed5072d-8767-41be-a5b9-a5aebb020569.png)
-    
-    404 error page to show a user that we have a sense of humor :)
-    
-#### Future Features
-
-- page with optional tuning kits filtered by make, model, engine, and year of the car
-- shop page to buy tuning accessories for DIY
 
 ## Testing
+🚨**Required** 
 
-   The site was tested in 4 browsers for Windows PC - Chrome, Firefox, Edge, and Opera. No issues were detected.
-   Safari browser test passed - no issues detected.
-   Mobile browsers tested - Chrome, Firefox, Samsung browser - no issues detected.
-   The site is fully responsive for every size device.
+In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
-### Validation Testing
-- [CSS Validator](https://jigsaw.w3.org/css-validator/)
-    ![obraz](https://user-images.githubusercontent.com/114284732/195988129-21d99b39-932f-4188-b3d8-dec7d48d36dc.png)
+If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
-    
-- [HTML Validator](https://validator.w3.org/)
-    ![obraz](https://user-images.githubusercontent.com/114284732/195988176-125b9378-dd91-46eb-b148-e5c89363a234.png)
+## Validation Testing
+🚨**Required** 
 
+In this section you should write up any websites you used to validate your code and include screenshots.
 
-### Cross Browser and Cross Device Testing
+**Validation issues are an automatic failure** You should run these about 3 times:
+- when you first deploy your site
+- just when you think you are done testing
+- right before you submit because 😼, ⚽, 🐶 & 👼 can eliminate a closing tag or curly bracket without you noticing.
 
-As the biggest market share in Ireland belongs to Chrome and Safari, I focused on these two browsers and didn't forget about others too.
+### CSS Validation
+🚨**Required** 
 
-Iphone 13 Pro
+If you only have one CSS file used on all pages, you only need to run this once for your deployed url, but if you have different files for different pages, run it by direct input per file.
 
-![obraz](https://user-images.githubusercontent.com/114284732/196225788-99190dd4-5e28-400e-b5c0-6730382968d0.png)
+- include a screenshot for each CSS file which includes the Green no ERRORS bar,  two check marks
 
-Iphone 13 Mini
+[CSS validator](https://jigsaw.w3.org/css-validator/)
 
-![obraz](https://user-images.githubusercontent.com/114284732/196225875-9dc14076-cc5b-4223-94d9-3e7d283a9b89.png)
+**styles.css**
+![img.png](documentation/images/css-validation.png)
 
-Ipad Pro
+### HTML Validation
+🚨**Required** 
 
-![obraz](https://user-images.githubusercontent.com/114284732/196226324-4683503d-f58c-4f4d-9f60-6e2657cd9486.png)
+If you only have one HTML file for your project, you only need to run this once for your deployed url, but if you have different files even for a thankyou or 404, run it by direct input per file or by deployed url per file.
 
-Mac
+- include a screenshot for each HTML file with the Blue Nu Html checker down to the blue checking complete bit. It's ok to have info and warnings. 
+- You may need a scrolling screenshot to capture this one. I tend to use the [GoFullPage extension in chrome](https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl):
 
-![obraz](https://user-images.githubusercontent.com/114284732/196226731-5bf21342-0e49-4022-84b5-ece8a7bb9d07.png)
+[HTML Validator](https://validator.w3.org/)
 
-Samsung S22
+**index.html**
+![img.png](documentation/images/index-html-validation.png)
 
-![obraz](https://user-images.githubusercontent.com/114284732/196227115-a877fae0-3cd8-4708-a6e0-ccfdf512630e.png)
+**404.html**
+![img.png](documentation/images/404-html-validation.png)
 
-The site is fully compatible with all Windows, iOS, and Android devices using Chrome, Safari, Firefox, Edge, Opera or Samsung browser.
+### Javascript Validation
+🚨**Required** 
 
-### Manual Testing
+This validator requires you to copy in your code. For each JavaScript file:
 
-https://docs.google.com/spreadsheets/d/1m6Gz4TojGCkIW2e6Ml6owGv7Xzy-e8yM/edit?usp=sharing&ouid=112368290695905562039&rtpof=true&sd=true
+- include a screenshot of the JS panel and the right-hand panel that shows now errors. 
+
+If you have tons of warnings about spacing and semicolons, right,click your file to format in gitPod and see if that helps. If you have a warning about ES6 or 7 add this to the top of your file:
+- `/*jshint esversion: 6 */ `
+
+[JS validation](https://jshint.com) 
+
+**pie.js**
+![img_3.png](img_3.png)
+
+### Javascript Validation
+🚨**Required** 
+If you chose to store data in a .json file, you should validate it too.
+
+For each file copy the code into the validator site and include a screenshot
+
+[JSON validation](https://jsonlint.com/) 
+
+**data.json**
+![img_2.png](img_2.png)
+
+## Compatibility and Responsive Testing
+🚨**Required** 
+
+1. Visit https://gs.statcounter.com/browser-market-share to figure out the most popular browsers & operating system combos seen across the we for the geographic region, and platoform(s) and screen sizes you expect your users to belong to. 
+
+1. Include a sentence about why you chose the combinations you did.
+
+1. Create a table that lists out what devices, browsers, and operating system you tested your application on and a brief description of why you chose the mixture you did. The point is to prove that you looked at the site across various browsers, operating systems, and viewport breakpoints. [markdown table generator](https://www.tablesgenerator.com/markdown_tables)
+
+1. if you can't find the brower/device/OS combinations you want on Browserstack with your github student webpack (or you didn't activate that in time), note what you'd ideally test on then what you ended up testing on as a compromise. 
+
+| TOOL / Device                 | BROWSER     | OS         | SCREEN WIDTH  |
+|-------------------------------|-------------|------------|---------------|
+| real phone: motog6            | chrome      | android    | XS 360 x 640  |
+| browser stack: iPhone5s       | safari      | iOs        | XS 320 x 568  |
+| dev tools emulator: pixel 2   | firefox     | android    | SM 411 x 731  |
+| browserstack: iPhone 10x      | Chrome      | iOs        | SM 375 x 812  |
+| browserstack: nexus 7 - vert  | Chrome      | android    | M 600 x 960   |
+| real tablet: ipad mini - vert | safari      | iOs        | M 768 x 1024  |
+| browserstack: nexus 7 - horiz | firefox     | android    | LG 960 x 600  |
+| chrome emulator: ipad - horiz | safari      | iOs        | LG 1024 x 768 |
+| browserstack                  | Chrome      | windows    | XL 1920 x 946 |
+| real computer: mac book pro   | safari 12.1 | Mohave     | XL 1400 x 766 |
+| browserstack                  | IE Edge 88  | windows 10 | XL 1920 x 964 |
+
+## Manual Testing
+🚨**Required** 
+
+For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. 
+
+There are 3 ways you can document your testing:
+
+**1. Markdown**
+
+Describing your testing process is via scenarios, right here such as:
+
+1. Contact form:
+    1. Go to the "Contact Us" page
+    2. Try to submit the empty form and verify that an error message about the required fields appears
+    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
+    4. Try to submit the form with all inputs valid and verify that a success message appears.
+
+**2. Use Spreadsheets**    
+
+Here is a [Manual Testing Template](https://docs.google.com/spreadsheets/d/1vc1IVL-ydQwWeWMqnk_GRox6HE6qxDLpchGse8Crayo/edit#gid=296578096) that you can use as a starting point to keep track of your testing efforts. Make a copy of it in your own account and update as needed to reflect the browsers you are testing and features.  
+
+**3.Use Github Agile Tools**
+
+Create Custom Issue Template and A Project Board in git hub.[Here's a brief overview](https://docs.google.com/document/d/1nDS5tZeMO77Dfq85IZGMSV6C41XaPm9FwcpR3k-UTVc/edit?usp=sharing) I put together on how to do this
+
+It's ok to spot check specific functionality across devices and browsers but each page should be viewed as a whole for each device/browser combo at least once too.
+
+A quick way to check if items are exceeding the screen width of a project is to run this javascript in the console for various screen emulations:
+
+```
+var docWidth = document.documentElement.offsetWidth;
+[].forEach.call(document.querySelectorAll('*'),function(el){if(el.offsetWidth > docWidth){console.log(el);}});
+```
+
 
 ### Defect Tracking
+🚨**Required** 
 
-- Problem with empty space on the right side of the home page - tracked and fixed on 4th Oct 2022
-- Problem with a too big margin above Nissan370z picture on home page - tracked and fixed on 7th Oct 2022
-- Problem with displaying main div content of the home page for Opera browser - tracked and fixed on 7th Oct 2022
-- Problem with displaying Nissan370z picture and quote for mobile devices - tracked and fixed on 7th Oct 2022
-- Double </i> closing tags - tracked and fixed on 8th Oct 2022
-- Too big margin for footer section (all devices) - tracked and fixed on 12th Oct 2022
-- Duplicate ID in footer - tracked and fixed on 14th Oct 2022
-- Bug with map display in booking.html page, no scroll option removed - tracked and fixed on 14th Oct 2022
-- Small bug with too width nav bar (width changed from 100% to auto) - tracked and fixed on 17th Oct 2022
+Try to create issues in real time as it better reflects the daily life of a developer.
 
-## Accessibility
+GitHub has an issues bar that helps you track things pretty quickly. Here's a [guide to GitHub Defects](Defects.md)
 
-Accessibility testing is aimed to make sure that those with visual or physical disabilities can still browse your website. Some users have had strokes or accidents that make it difficult to use a mouse so they use keyboard keys to tab through sites. Others use screen readers that rely on HTML tags to help the user navigate quickly through the site to find the information they want, others have color blindness or contrast issues. It's the law to provide services 
-Here's a [site](https://www.w3.org/WAI/fundamentals/accessibility-intro/#:~:text=Accessibility%20is%20Important%20for%20Individuals%2C%20Businesses%2C%20Society,-The%20Web%20is&text=That%20is%2C%20the%20accessibility%20barriers,older%20people) where we can learn more about accessibility and the internet.
-Engine Boos Garage site is designed to support users with reading difficulties.
+You could do track them as bullet items in this document, or create a google speadsheet too. 
 
-### Lighthouse Audits
+### Defects of Note
+🚀 **merit & beyond**
 
-- Chrome Lighthouse tool for PC:
+Some defects are more pesky than others. Highlight 3-5 of the bugs that drove you the most nuts and link to them directly here.
 
-  ![obraz](https://user-images.githubusercontent.com/114284732/196223204-f3f09164-9caa-4afa-9ad6-aac00e48af5d.png)
 
-- Chrome Lighthouse tool for Mobile:
+## Outstanding Defects
+🚨**Required** 
 
-  ![obraz](https://user-images.githubusercontent.com/114284732/196224190-20e5378e-753a-4fa2-8785-4720439aef52.png)
+It's ok to not resolve all the defects you found as long as:
+- it does not impact a user from completing a vital function on the website
+- it only affects a very small subset of users
+- is an extreme edge case that very few users would try
+- there is an open issue against a framework, browser or technology used
 
+If you know of something that isn't quite right, create an issue and link to it here and explain why you chose not to resolve it. 
+
+Sometimes it's as simple, word wrapping issue that makes the site look odd at a certain screensize that you just didn't have time to fix due to the impending deadline it's best to mention it but note why you allowed it to go live: "Yes it looks odd, but it doesn't impact core functionality of the site." than to let the accessors think you didn't notice it. 
+
+## Core Web Vitals
+🚀 **merit & beyond**
+
+SEO is greatly impacted by your core web vitals. The readout from https://web.dev/measure/ which is essentially a lighthouse audit gives your site scores in 4 categories. Ideally you want your site to be in the green for all 4 scores. web.dev has dedicated servers to test deployed sites without extensions that skew the results, so it's best to get results from this site.
+ You should talk about the results for each section pay attention to 
+
+## Accessibility Testing
+🚨**Required** 
+
+Accessibility testing is aimed to make sure that those with visual or physical disabilities can still browse your website. Some users have had strokes or accidents that make it difficult to use a mouse, so they use keyboard keys to tab through sites. Others use screen readers that rely on HTML tags to help the user navigate quickly through the site to find information they want, others have color blindness or contrast issues. It's the law to provide services 
+Here's a [site](https://www.w3.org/WAI/fundamentals/accessibility-intro/#:~:text=Accessibility%20is%20Important%20for%20Individuals%2C%20Businesses%2C%20Society,-The%20Web%20is&text=That%20is%2C%20the%20accessibility%20barriers,older%20people) where you can learn more about accessibility and the internet.
+
+### Accessibility Audits
+🚨**Required** 
+
+Accessibility audits run through the HTML and determine if the parts of the WCAG (web content accessibility guidelines ) that are implemented through HTML tags and attributes are present. They can do some checking for low vision/contrast stuff too.
+
+You should run your deployed website pages through  at least on auditing tool. lighthouse's audit to check performance, accessibility, best practices and SEO scores. You should aim to get 85 or higher score on accessibility. 
+
+**You should fix issues associated with:**
+- contrast 
+- aria labels
+- alt text
+- large images
+- skewed images
+
+**Lighthouse**
+https://web.dev/measure/  If you have lower scores, read the report and follow the links to address the flagged issues. You can run this tool from Chrome Dev Tools too against your local machine, but chrome extensions can sometimes give you missing alt text on things like the grammarly plug in tracking pixel.
+
+You want a score in the green for accessibility and should look at ways to get it to 100.
+
+**[WAVE chrome](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) extension**
+Wave is developed by webaim.org and does a bit better at contrast issues and uses 2.1 guidelines
+
+**Contrast Checkers**
+- https://webaim.org/resources/contrastchecker/
+- https://color.a11y.com/
 
 ### Keyboard Navigation
+🚀 **merit & beyond**
 
-The website allows a user to fully navigate with the Tab key.
+Another way to accessibility test your site is to try to click on the browser URL and see what happens if you use the tab, arrow and enter keys. Does it work well or does the user get stuck? Check this in a couple browsers as the focus & active outlines are typically styled by the browser
 
-## Deployment
+The expected results for various keyboard entries and field types can be found [here](https://webaim.org/techniques/keyboard/#testing)
 
-The site was deployed to GitHub pages:
+You can take a video of this testing if you want and convert it to a gif and paste that into your readme. Record something to yourself in a Slack direct message, then download it. Then you can use https://cloudconvert.com/mp4-to-gif to convert the mp4 to a gif and just paste it into the readme via GiHu, and it'll resolve itself.
 
-1. Go to GitHub EngineBoostGarage repository then open settings:
+### Chrome Vox Reader
+🚀 **merit & beyond**
 
-  ![obraz](https://user-images.githubusercontent.com/114284732/195993317-61729a82-8f91-438b-93c5-cc751428002f.png)
-    
-2. Select pages:
-  
-  ![obraz](https://user-images.githubusercontent.com/114284732/195993351-ee95f76f-48c1-4c01-9a6c-b6c0ede121a5.png)
-    
-3. Choose source to deploy from a branch, then select the main branch and save:
+If you are really ambitious, you can use the [VoxReader](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en) extension in chrome to see what your site sounds like on a screen reader. It really drives home the need for good aria-labels & semantic HTML.
 
-  ![obraz](https://user-images.githubusercontent.com/114284732/195993404-aa51e712-2ef2-4ead-87ee-6e7b98240704.png)
+## Automated Testing
+🚀 **merit & beyond**
 
-## Credits
+Once you write javascript, you could use jasmine or jest to automate testing. This stuff isn't covered until you get into the P4 materia!  [Here's a quick tutorial](https://www.youtube.com/watch?v=FgnxcUQ5vho) if you are interested.
 
-- https://learn.codeinstitute.net/ - Love Running and Coders Coffeehouse projects helped me a lot to understand the main points of the good website
-- https://stackoverflow.com/ - a great site for troubleshooting
-- https://www.w3schools.com/ - gallery code inspiration
-- https://fontjoy.com/ - font idea inspiration
-- https://codepen.io/yuchehsieh/pen/ExaWvbe - sticky navbar feature
+# Technologies Used
+🚀 **merit & beyond**
 
-### Content
+This section just summarizers tools and programming languages you used.
 
-- https://quotefancy.com - Jeremy Clarkson's quote
+## Languages
+🚀 **merit & beyond**
 
-### Media
+-write bullet points for the languages you used (HTML & CSS)
 
-- https://www.pexels.com/ - all images were taken from Pexels
-- https://imagecompressor.com/ - image optimizer
-- https://cloudconvert.com - jpg to webp image conversion
-- https://fontawesome.com - icons
-- https://google-map-generator.com/ - Google map iframe
-- https://coolors.co/ - color palette generator
+## Frameworks, Libraries & Programs Used
+🚀 **merit & beyond**
 
-### Acknowledgments
+List out the tools you used with a link and a short description (this helps others figure out where to get the bonus points & reminds you what you used for your next project
+- Balsamiq
+- Coolors.co
+- fontawesome
+- gitpod
+- github
+- google fonts
+- font awesome
+- amiresponsive
+- table of contents creator
+- markdown table generator
 
-Big thanks to Malia Havlicek - Code Institute mentor for her ideas and support in this project!
-Also, I would like to thank all my friends for live testing the site!
+# Deployment
+🚨**Required** 
 
-- https://gs.statcounter.com/ - browser market share for Ireland
-- https://www.browserstack.com/ - Safari browser testing tool
-- https://ui.dev - responsiveness testing
-- https://validator.w3.org/ - HTML validator
-- https://jigsaw.w3.org/ - CSS validator
-- https://web.dev - performance testing
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages).
+
+In particular, you should provide all details of the differences between the deployed version and the development version, if any.
+
+Remember to use proper markdown for commands and enumerated steps.
+
+
+You may want to re-watch the [initial deployment in gitpod video](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/9b06129195c64fada6783de9cfe82d60/) when writing up this section.
+
+## Deploy to GitHub Pages
+🚨**Required** 
+
+Write out steps you would take and test them to deploy your code to GitHub Pages, include screenshots if you think they would make the process easier.
+
+## Forking The Repository
+🚀 **merit & beyond**
+
+A fork creates a completely independent copy of Git repository. In contrast to a fork, a Git clone creates a linked copy that will continue to synchronize with the target repository, so if you want to ensure other people don't commit to your public repo, you might want to tell them to fork the repository :) 
+
+## Run Locally With GitPod
+🚀 **merit & beyond**
+
+Enumerate and write the steps of how to run a project locally via gitPod. Include Screenshots to maximize the impact of the instructions.
+
+# Credits
+🚨**Required** 
+
+To avoid plagiarism amd copyright infringement, you should mention any other projects, stackoverflow, videos, blogs, etc that you used to gather imagery or ideas for your code even if you used it as a starting point and modified things. Giving credit to other people's efforts and ideas that saved you time acknowledges the hard work others did. 
+
+## Content
+🚨**Required** 
+
+Use bullet points to list out sites you copied text from and cross-reference where those show up on your site
+
+## Media
+🚨**Required** 
+
+Make a list of sites you used images from. If you used several sites try to match up each image to the correct site. This includes attribution for icons if they came from font awesome or other sites, give them credit.
+
+You should not be using images taken from copyrighted sites, but only royalty free ones. Try typing `!copyright` in slack and see what help it gives you for this topic.
+
+## Acknowledgments
+🚀 **merit & beyond**
+
+This is the section where you refer to code examples, mentors, blogs, stack overflow answers and videos that helped you accomplish your end project. Even if it's an idea that you updated you should note the site and why it was important to your completed project.
+
+If you used a CodeInstitute Example project as a starting point. Make note of that here.
+
+
