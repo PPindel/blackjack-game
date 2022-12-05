@@ -86,7 +86,7 @@ body {
 
 /* Info section */
 
-/* The Modal (background) */
+/* The modal (background) */
 .modal {
     display: none;
     position: fixed;
@@ -100,20 +100,33 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal Content/Box */
-.modal-content {
-    text-align: center;
+/* Modal content/box */
+.modalContent {
     background-color: #E7DFC6;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #131B23;
     width: 80%;
     font-weight: bold;
-    font-size: large;
+    font-size: 150%;
     color: #131B23;
 }
 
-/* The Close Button */
+.modalContentAlert {
+    text-align: center;
+    background-color: #E7DFC6;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #131B23;
+    width: 12rem;
+    height: 7rem;
+    font-weight: bold;
+    font-size: 150%;
+    color: #131B23;
+    position: relative;
+}
+
+/* The close and confirm buttons */
 .close {
     color: #131B23;
     padding: 0 0 0 5px;
@@ -124,6 +137,24 @@ body {
 
 .close:hover,
 .close:focus {
+    color: #2274A5;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    
+}
+
+.confirm {
+    color: #131B23;
+    font-size: 200%;
+    font-weight: bold;
+    position: absolute;
+    left: 40%;
+    bottom: 5%;
+}
+
+.confirm:hover,
+.confirm:focus {
     color: #2274A5;
     text-decoration: none;
     cursor: pointer;
@@ -183,7 +214,7 @@ footer {
     align-items: flex-start;
     font-size: 2rem;
     font-weight: bold;
-    margin-top: -16%;
+    margin-top: -18%;
     color: #131B23;
 }
 

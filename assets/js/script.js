@@ -284,7 +284,15 @@ infoClose.onclick = function () {
 }
 
 window.onclick = function (event) {
-    if (event.target === infoModal) {
+    if (event.target === winModal) {
+        winModal.style.display = "none";
+    } else if (event.target === dealerWinsModal) {
+        dealerWinsModal.style.display = "none";
+    } else if (event.target === drawModal) {
+        drawModal.style.display = "none";
+    } else if (event.target === bustModal) {
+        bustModal.style.display = "none";
+    } else if (event.target === infoModal) {
         infoModal.style.display = "none";
     }
 }

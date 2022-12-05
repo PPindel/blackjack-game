@@ -274,16 +274,16 @@ let infoBtn = document.getElementById("infoButton");
 
 // modals
 let winModal = document.getElementById("winModal");
-let winClose = document.getElementsByClassName("close")[0];
+let winClose = document.getElementsByClassName("confirm")[0];
 
 let dealerWinsModal = document.getElementById("dealerWinsModal");
-let dealerWinsClose = document.getElementsByClassName("close")[1];
+let dealerWinsClose = document.getElementsByClassName("confirm")[1];
 
 let drawModal = document.getElementById("drawModal");
-let drawClose = document.getElementsByClassName("close")[2];
+let drawClose = document.getElementsByClassName("confirm")[2];
 
 let bustModal = document.getElementById("bustModal");
-let bustClose = document.getElementsByClassName("close")[3];
+let bustClose = document.getElementsByClassName("confirm")[3];
 
 let infoModal = document.getElementById("infoModal");
-let infoClose = document.getElementsByClassName("close")[4];
+let infoClose = document.getElementsByClassName("close")[0];

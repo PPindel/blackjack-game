@@ -32,6 +32,13 @@
 
 <body>
 
+    <!-- No script-->
+    <noscript>
+        <h2>Javascript must be enabled to play this game!</h2>
+        <p><a href="https://www.google.com/search?q=enable+javascript" target="_blank">Click
+                Here</a> to search how to do this on your browser.</p>
+    </noscript>
+
     <!-- Heading and logo -->
     <header>
         <h1 class="heading">
@@ -72,10 +79,9 @@
         <!-- You win -->
         <div id="winModal" class="modal">
 
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>You win!</p>
+            <div class="modalContentAlert">
+                <span class="confirm"><i class="fa-regular fa-circle-check"></i></span>
+                <p>You win<i class="fa-solid fa-exclamation"></i> <i class="fa-solid fa-trophy"></i></p>
             </div>
 
         </div>
@@ -83,10 +89,9 @@
         <!-- Dealer wins -->
         <div id="dealerWinsModal" class="modal">
 
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Dealer wins!</p>
+            <div class="modalContentAlert">
+                <span class="confirm"><i class="fa-regular fa-circle-check"></i></span>
+                <p>Dealer wins<i class="fa-solid fa-exclamation"></i></p>
             </div>
 
         </div>
@@ -94,10 +99,9 @@
         <!-- Draw -->
         <div id="drawModal" class="modal">
 
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Draw!</p>
+            <div class="modalContentAlert">
+                <span class="confirm"><i class="fa-regular fa-circle-check"></i></span>
+                <p>Draw<i class="fa-solid fa-exclamation"></i></p>
             </div>
 
         </div>
@@ -105,10 +109,9 @@
         <!-- Bust -->
         <div id="bustModal" class="modal">
 
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Bust!</p>
+            <div class="modalContentAlert">
+                <span class="confirm"><i class="fa-regular fa-circle-check"></i></span>
+                <p>Bust<i class="fa-solid fa-exclamation"></i> <i class="fa-solid fa-explosion"></i></p>
             </div>
 
         </div>
@@ -116,8 +119,7 @@
         <!-- How to play -->
         <div id="infoModal" class="modal">
 
-            <!-- Modal content -->
-            <div class="modal-content">
+            <div class="modalContent">
                 <span class="close">&times;</span>
                 <p>Aim of the Blackjack Game is to get 21 or as close to as possible. Number cards have their
                     face value, jacks, kings and queens are worth 10. Ace can be either 1 or 11 and the player
