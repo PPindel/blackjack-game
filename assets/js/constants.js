@@ -265,3 +265,25 @@ let fullDeck = [{
 let i = 0;
 let currentUserCards = [];
 let currentCpuCards = [];
+
+// buttons
+let newGameButton = document.getElementById("newGame");
+let stayButton = document.getElementById("stay");
+let hitButton = document.getElementById("hit");
+let infoBtn = document.getElementById("infoButton");
+
+// modals
+let winModal = document.getElementById("winModal");
+let winClose = document.getElementsByClassName("close")[0];
+
+let dealerWinsModal = document.getElementById("dealerWinsModal");
+let dealerWinsClose = document.getElementsByClassName("close")[1];
+
+let drawModal = document.getElementById("drawModal");
+let drawClose = document.getElementsByClassName("close")[2];
+
+let bustModal = document.getElementById("bustModal");
+let bustClose = document.getElementsByClassName("close")[3];
+
+let infoModal = document.getElementById("infoModal");
+let infoClose = document.getElementsByClassName("close")[4];

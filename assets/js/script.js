@@ -84,19 +84,19 @@ function checkResult() {
     //console.log("CPU score: " + cpuScore); /* Testing */
     document.getElementById("cpuHand").innerHTML = cpuScore;
 
-    //alert based on result
+    //alert (modal) based on result
     if ((userScore > cpuScore) || (cpuScore > 21)) {
         setTimeout(function () {
-            alert("You win!");
+            winModalToggle();
         }, 500);
         incrementUserPoints();
     } else if (userScore === cpuScore) {
         setTimeout(function () {
-            alert("Draw!");
+            drawModalToggle();
         }, 500);
     } else {
         setTimeout(function () {
-            alert("Dealer wins!");
+            dealerWinsModalToggle();
         }, 500);
         incrementCpuPoints();
     }
@@ -199,7 +199,7 @@ function bust() {
     newGameButton.style.display = "inline";
     document.getElementById("newGame").focus();
     setTimeout(function () {
-        alert("Bust");
+        bustModalToggle();
     }, 500);
 }
 
@@ -241,32 +241,56 @@ function stayButtonAction() {
     document.getElementById("newGame").focus();
 }
 
-/**
- * Modal button for the instructions how to play
- */
-let modal = document.getElementById("infoModal");
+// Modals
 
-let btn = document.getElementById("infoButton");
-
-let span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-    modal.style.display = "block";
+function winModalToggle() {
+    winModal.style.display = "block";
 }
 
-span.onclick = function() {
-    modal.style.display = "none";
+winClose.onclick = function () {
+    winModal.style.display = "none";
 }
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+function dealerWinsModalToggle() {
+    dealerWinsModal.style.display = "block";
+}
+
+dealerWinsClose.onclick = function () {
+    dealerWinsModal.style.display = "none";
+}
+
+function drawModalToggle() {
+    drawModal.style.display = "block";
+}
+
+drawClose.onclick = function () {
+    drawModal.style.display = "none";
+}
+
+function bustModalToggle() {
+    bustModal.style.display = "block";
+}
+
+bustClose.onclick = function () {
+    bustModal.style.display = "none";
+}
+
+infoBtn.onclick = function () {
+    infoModal.style.display = "block";
+}
+
+infoClose.onclick = function () {
+    infoModal.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target === infoModal) {
+        infoModal.style.display = "none";
     }
 }
 
 /**
  * Toggles on instructions how to play the game
- */
 function toggleInfo() {
     let infoText = document.getElementById("instructions");
     if (infoText.style.display === "block") {
@@ -274,22 +298,20 @@ function toggleInfo() {
     } else {
         infoText.style.display = "block";
     }
-}
+}*/
 
 // Button listeners
-let hitButton = document.getElementById("hit");
 hitButton.addEventListener("click", function () {
     drawCards();
     checkBust();
 });
 
-let stayButton = document.getElementById("stay");
 stayButton.addEventListener("click", stayButtonAction);
 
-let newGameButton = document.getElementById("newGame");
 newGameButton.addEventListener("click", runGame);
 
+/* old info button
 let infoButton = document.getElementById("infoButton");
-infoButton.addEventListener("click", toggleInfo);
+infoButton.addEventListener("click", toggleInfo); */
 
 document.addEventListener("DOMContentLoaded", runGame);
