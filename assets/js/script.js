@@ -242,6 +242,29 @@ function stayButtonAction() {
 }
 
 /**
+ * Modal button for the instructions how to play
+ */
+let modal = document.getElementById("infoModal");
+
+let btn = document.getElementById("infoButton");
+
+let span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+/**
  * Toggles on instructions how to play the game
  */
 function toggleInfo() {

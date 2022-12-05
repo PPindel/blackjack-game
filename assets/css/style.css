@@ -84,6 +84,49 @@ body {
     transform: scale(0.95);
 }
 
+/* Info section */
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #E7DFC6;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #131B23;
+    width: 80%;
+    font-weight: bold;
+    font-size: large;
+    color: #131B23;
+}
+
+/* The Close Button */
+.close {
+    color: #131B23;
+    float: right;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #131B23;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #infoButton {
     margin-left: 2%;
     padding: 1% 1%;
@@ -103,11 +146,12 @@ body {
     transform: scale(0.9);
 }
 
+/* Old info button content
 #instructions {
     display: none;
     font-size: 110%;
     padding: 1%;
-}
+} */
 
 footer {
     margin-top: 2%;
@@ -121,7 +165,7 @@ footer {
     border: 3px solid;
     width: 98px;
     height: 160px;
-    margin: 20px 20px;
+    margin: 20px 10px;
     border-radius: 10px;
 }
 
@@ -166,7 +210,7 @@ footer {
 
 /* --------- Media queries */
 
-/*---------- Devices under 1200px */
+/*---------- Classic screens under 1200px */
 @media (max-width: 1200px) {
     .gameArea {
         background-color: #816C61;
@@ -179,69 +223,101 @@ footer {
     }
 }
 
-    /* --------- Tablets */
-    @media (max-width: 800px) {
-        .cards {
-            width: 54px;
-            height: 80px;
-            margin: 15px 15px;
-            border-radius: 5px;
-        }
-
-        .topLeft {
-            font-size: 1rem;
-            margin-top: -14%;
-        }
-
-        .suite {
-            font-size: 1.25rem;
-        }
-
-        .bottomRight {
-            font-size: 1rem;
-        }
-
-        .buttons {
-            height: 2.5rem;
-            width: 7rem;
-            font-size: medium;
-        }
-
-        #scoreArea {
-            font-size: medium;
-        }
-
-        #questionMarkStyle {
-            font-size: 200%;
-        }
+/* --------- Older screens under 1080px */
+@media (max-width: 1080px) {
+    .cards {
+        width: 54px;
+        height: 80px;
+        margin: 15px 15px;
+        border-radius: 5px;
     }
 
-    /* --------- Mobile phones */
-    @media (max-width: 460px) {
-        .cards {
-            width: 25px;
-            height: 40px;
-            margin: 8.75px 8.75px;
-        }
-
-        .topLeft {
-            font-size: 14px;
-            margin-top: -70%;
-        }
-
-        .suite {
-            font-size: 14px;
-        }
-
-        .bottomRight {
-            font-size: 14px;
-        }
-
-        .gameArea>p {
-            font-size: 14px;
-        }
-
-        #instructions {
-            font-size: 14px;
-        }
+    .topLeft {
+        font-size: 1rem;
+        margin-top: -14%;
     }
+
+    .suite {
+        font-size: 1.25rem;
+    }
+
+    .bottomRight {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        height: 2.5rem;
+        width: 7rem;
+        font-size: medium;
+    }
+
+    #scoreArea {
+        font-size: medium;
+    }
+
+    #questionMarkStyle {
+        font-size: 200%;
+    }
+
+    .centerDiv span {
+        font-size: large;
+    }
+}
+
+/* --------- Tablets */
+@media (max-width: 700px) {
+    .cards {
+        padding: 20px 5px;
+        width: 40px;
+        height: 60px;
+        margin: 6px 6px;
+    }
+
+    .topLeft {
+        margin-top: -50%;
+    }
+
+
+
+    #questionMarkStyle {
+        margin-top: 35%;
+    }
+}
+
+/* --------- Mobile phones */
+@media (max-width: 570px) {
+    .cards {
+        width: 30px;
+        height: 40px;
+        margin: 2px 2px;
+    }
+
+    .topLeft {
+        font-size: 14px;
+        margin-top: -60%;
+    }
+
+    .suite {
+        font-size: 14px;
+    }
+
+    .bottomRight {
+        font-size: 14px;
+    }
+
+    #questionMarkStyle {
+        margin-top: 20%;
+    }
+
+    .gameArea>p {
+        font-size: 14px;
+    }
+
+    #instructions {
+        font-size: 14px;
+    }
+
+    .centerDiv span {
+        font-size: medium;
+    }
+}
