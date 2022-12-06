@@ -119,7 +119,7 @@ body {
     padding: 20px;
     border: 1px solid #131B23;
     width: 12rem;
-    height: 7rem;
+    height: 15rem;
     font-weight: bold;
     font-size: 150%;
     color: #131B23;
@@ -158,6 +158,26 @@ body {
     color: #2274A5;
     text-decoration: none;
     cursor: pointer;
+}
+
+#winner {
+    font-weight: bold;
+    color: goldenrod;
+}
+
+#lost {
+    font-weight: bold;
+    color: grey;
+}
+
+#drawRound {
+    font-weight: bold;
+    color: blue;
+}
+
+#busted {
+    font-weight: bold;
+    color: red;
 }
 
 #infoButton {

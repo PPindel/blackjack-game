@@ -283,6 +283,14 @@ infoClose.onclick = function () {
     infoModal.style.display = "none";
 }
 
+window.onkeydown = function () {
+    winModal.style.display = "none";
+    dealerWinsModal.style.display = "none";
+    drawModal.style.display = "none";
+    bustModal.style.display = "none";
+    infoModal.style.display = "none";
+}
+
 window.onclick = function (event) {
     if (event.target === winModal) {
         winModal.style.display = "none";
