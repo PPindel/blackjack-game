@@ -3,7 +3,7 @@
 /**
  * The main game function activated at the start of each deal
  */
-function runGame() {
+ function runGame() {
 
     hitButton.style.display = "inline";
     stayButton.style.display = "inline";
