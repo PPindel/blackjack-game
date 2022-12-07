@@ -3,12 +3,14 @@
 /**
  * The main game function activated at the start of each deal
  */
- function runGame() {
+function runGame() {
 
     hitButton.style.display = "inline";
     stayButton.style.display = "inline";
     newGameButton.style.display = "none";
     document.getElementById("hit").focus();
+    document.getElementById("userPoints").innerText = savedScore.gamesWon;
+    document.getElementById("cpuPoints").innerText = savedScore.gamesLost;
     i = 0;
     shuffle();
 
@@ -160,6 +162,9 @@ function cpuDraw() {
 function incrementUserPoints() {
     let userPoints = parseInt(document.getElementById("userPoints").innerText);
     document.getElementById("userPoints").innerText = ++userPoints;
+    savedScore.gamesWon++;
+    localStorage.setItem(savedScore, JSON.stringify(savedScore));
+    //console.log(JSON.parse(localStorage.getItem(savedScore)));
 }
 
 /**
@@ -168,6 +173,9 @@ function incrementUserPoints() {
 function incrementCpuPoints() {
     let cpuPoints = parseInt(document.getElementById("cpuPoints").innerText);
     document.getElementById("cpuPoints").innerText = ++cpuPoints;
+    savedScore.gamesLost++;
+    localStorage.setItem(savedScore, JSON.stringify(savedScore));
+    //console.log(JSON.parse(localStorage.getItem(savedScore)));
 }
 
 /**
@@ -241,6 +249,13 @@ function stayButtonAction() {
     document.getElementById("newGame").focus();
 }
 
+// Local storage
+
+if (JSON.parse(localStorage.getItem(savedScore)) !== null) {
+    savedScore = JSON.parse(localStorage.getItem(savedScore));
+}
+
+
 // Modals
 
 function winModalToggle() {
@@ -249,7 +264,7 @@ function winModalToggle() {
 
 winClose.onclick = function () {
     winModal.style.display = "none";
-}
+};
 
 function dealerWinsModalToggle() {
     dealerWinsModal.style.display = "block";
@@ -257,7 +272,7 @@ function dealerWinsModalToggle() {
 
 dealerWinsClose.onclick = function () {
     dealerWinsModal.style.display = "none";
-}
+};
 
 function drawModalToggle() {
     drawModal.style.display = "block";
@@ -265,7 +280,7 @@ function drawModalToggle() {
 
 drawClose.onclick = function () {
     drawModal.style.display = "none";
-}
+};
 
 function bustModalToggle() {
     bustModal.style.display = "block";
@@ -273,15 +288,15 @@ function bustModalToggle() {
 
 bustClose.onclick = function () {
     bustModal.style.display = "none";
-}
+};
 
 infoBtn.onclick = function () {
     infoModal.style.display = "block";
-}
+};
 
 infoClose.onclick = function () {
     infoModal.style.display = "none";
-}
+};
 
 window.onkeydown = function () {
     winModal.style.display = "none";
@@ -289,7 +304,7 @@ window.onkeydown = function () {
     drawModal.style.display = "none";
     bustModal.style.display = "none";
     infoModal.style.display = "none";
-}
+};
 
 window.onclick = function (event) {
     if (event.target === winModal) {
@@ -303,7 +318,7 @@ window.onclick = function (event) {
     } else if (event.target === infoModal) {
         infoModal.style.display = "none";
     }
-}
+};
 
 /**
  * Toggles on instructions how to play the game

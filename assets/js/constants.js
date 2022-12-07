@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // the full deck global variable
 let fullDeck = [{
         rank: "2",
@@ -265,6 +267,10 @@ let fullDeck = [{
 let i = 0;
 let currentUserCards = [];
 let currentCpuCards = [];
+let savedScore = {
+    gamesWon: 0,
+    gamesLost: 0
+};
 
 // buttons
 let newGameButton = document.getElementById("newGame");
