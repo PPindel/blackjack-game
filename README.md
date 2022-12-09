@@ -207,77 +207,28 @@ Also implementing variable value of Ace (1 or 11) was a nightmare at the beggini
 ## Outstanding Defects
 No outstanding bugs known.
 
-## Core Web Vitals
-🚀 **merit & beyond**
+## Accessibility
+Mobile version:
 
-SEO is greatly impacted by your core web vitals. The readout from https://web.dev/measure/ which is essentially a lighthouse audit gives your site scores in 4 categories. Ideally you want your site to be in the green for all 4 scores. web.dev has dedicated servers to test deployed sites without extensions that skew the results, so it's best to get results from this site.
- You should talk about the results for each section pay attention to 
+![image](https://user-images.githubusercontent.com/114284732/206808309-a7d2fe28-4c0f-48eb-9948-d3ac24146164.png)
 
-## Accessibility Testing
-🚨**Required** 
+Desktop version:
 
-Accessibility testing is aimed to make sure that those with visual or physical disabilities can still browse your website. Some users have had strokes or accidents that make it difficult to use a mouse, so they use keyboard keys to tab through sites. Others use screen readers that rely on HTML tags to help the user navigate quickly through the site to find information they want, others have color blindness or contrast issues. It's the law to provide services 
-Here's a [site](https://www.w3.org/WAI/fundamentals/accessibility-intro/#:~:text=Accessibility%20is%20Important%20for%20Individuals%2C%20Businesses%2C%20Society,-The%20Web%20is&text=That%20is%2C%20the%20accessibility%20barriers,older%20people) where you can learn more about accessibility and the internet.
+![image](https://user-images.githubusercontent.com/114284732/206808378-2d7895de-a9c7-4010-baf2-6e50f3d9aa6f.png)
 
-### Accessibility Audits
-🚨**Required** 
-
-Accessibility audits run through the HTML and determine if the parts of the WCAG (web content accessibility guidelines ) that are implemented through HTML tags and attributes are present. They can do some checking for low vision/contrast stuff too.
-
-You should run your deployed website pages through  at least on auditing tool. lighthouse's audit to check performance, accessibility, best practices and SEO scores. You should aim to get 85 or higher score on accessibility. 
-
-**You should fix issues associated with:**
-- contrast 
-- aria labels
-- alt text
-- large images
-- skewed images
-
-**Lighthouse**
-https://web.dev/measure/  If you have lower scores, read the report and follow the links to address the flagged issues. You can run this tool from Chrome Dev Tools too against your local machine, but chrome extensions can sometimes give you missing alt text on things like the grammarly plug in tracking pixel.
-
-You want a score in the green for accessibility and should look at ways to get it to 100.
-
-**[WAVE chrome](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) extension**
-Wave is developed by webaim.org and does a bit better at contrast issues and uses 2.1 guidelines
-
-**Contrast Checkers**
-- https://webaim.org/resources/contrastchecker/
-- https://color.a11y.com/
+Accessibility score for mobile devices is 97 points due to warning for colors contrast, however I've tested the game on multiple devices and the color contrast is ok in my opinion (my testers (friends :)) agree with me). For desktop it's 100. Aria labels and titles are used in this project.
 
 ### Keyboard Navigation
-🚀 **merit & beyond**
-
-Another way to accessibility test your site is to try to click on the browser URL and see what happens if you use the tab, arrow and enter keys. Does it work well or does the user get stuck? Check this in a couple browsers as the focus & active outlines are typically styled by the browser
-
-The expected results for various keyboard entries and field types can be found [here](https://webaim.org/techniques/keyboard/#testing)
-
-You can take a video of this testing if you want and convert it to a gif and paste that into your readme. Record something to yourself in a Slack direct message, then download it. Then you can use https://cloudconvert.com/mp4-to-gif to convert the mp4 to a gif and just paste it into the readme via GiHu, and it'll resolve itself.
-
-### Chrome Vox Reader
-🚀 **merit & beyond**
-
-If you are really ambitious, you can use the [VoxReader](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en) extension in chrome to see what your site sounds like on a screen reader. It really drives home the need for good aria-labels & semantic HTML.
-
-## Automated Testing
-🚀 **merit & beyond**
-
-Once you write javascript, you could use jasmine or jest to automate testing. This stuff isn't covered until you get into the P4 materia!  [Here's a quick tutorial](https://www.youtube.com/watch?v=FgnxcUQ5vho) if you are interested.
+Game is keyboard friendly - all navigation tests passed. I've used focus function to bring focus to key buttons and implemented function to close modals with any button on keyboard down.
 
 # Technologies Used
-🚀 **merit & beyond**
-
-This section just summarizers tools and programming languages you used.
-
 ## Languages
-🚀 **merit & beyond**
-
--write bullet points for the languages you used (HTML & CSS)
+- HTML
+- CSS
+- Java Script
 
 ## Frameworks, Libraries & Programs Used
-🚀 **merit & beyond**
-
-List out the tools you used with a link and a short description (this helps others figure out where to get the bonus points & reminds you what you used for your next project
+List out the tools you used:
 - Balsamiq
 - Coolors.co
 - fontawesome
@@ -285,9 +236,6 @@ List out the tools you used with a link and a short description (this helps othe
 - github
 - google fonts
 - font awesome
-- amiresponsive
-- table of contents creator
-- markdown table generator
 
 # Deployment
 ## Run Locally With GitPod
