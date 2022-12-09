@@ -91,50 +91,55 @@ Custom modals instead of common alarms at the end of the deal:
 ![image](https://user-images.githubusercontent.com/114284732/206765500-bee3da79-b6a7-4454-b2d7-2c3f0fe657e5.png)
 
 ## Wireframes
-🚀 **merit & beyond**
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in a separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser. 
-
-Wireframes can be as simple as a picture of a drawing of how you envisioned laying out the information for you pages in desktop, tablet and mobile views. They are a roadmap and do not have to be 100% accurate of the final product. Or you can use the [Balsamiq](https://code-institute-room.slack.com/archives/C0L316Z96/p1640099614368000) tool that Code Institute provides students access to. 
-
-## mobile wireframes
-🚀 **merit & beyond**
-
-## tablet wireframes
-🚀 **merit & beyond**
-
-## desktop wireframes
-🚀 **merit & beyond**
-
+![image](https://user-images.githubusercontent.com/114284732/206768461-fc50038b-8df2-4c5d-8867-13b22fe720ac.png)
 
 ### Features
-🚨**Required** 
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so and how they tie into  your user stories.
-
 ## Implemented Features
-🚨**Required** 
+- Easy to navigate, simple one page design with semantic construction - header, main section and footer:
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+    ![image](https://user-images.githubusercontent.com/114284732/206769803-27f99f5d-86e2-4650-ae18-4b0c2b926ea3.png)
+    
+- Live score counter:
 
-It's easiest to break this section down into the header, footer, and each page/layer of your website. Call out any differences for mobile vs desktop presentations, include a screenshot of the implemented feature.
+    ![image](https://user-images.githubusercontent.com/114284732/206769902-3b78b4f0-1cef-4afd-9d75-467477e67ea6.png)
+    
+- Simple AI implemented for computer opponent so each game is exciting and satysfing:
 
-Don't forget your 404 error page.
+    ![image](https://user-images.githubusercontent.com/114284732/206770764-4d6263a5-8ed6-4dac-9d28-04721e3f4521.png)
+    
+- Dynamic game interface with hiding buttons:
+
+    ![image](https://user-images.githubusercontent.com/114284732/206771585-45800f1d-9782-45ca-b827-9c08e9076393.png)
+    ![image](https://user-images.githubusercontent.com/114284732/206771623-20fb5019-5f66-4e42-9f77-f64c5a29ce1d.png)
+
+- Animated buttons:
+
+    ![image](https://user-images.githubusercontent.com/114284732/206770118-091bf293-d822-4bb9-9dbc-4366758223f3.png)
+
+- Big points are stored locally in JSON file so user doesn't lose progress after closing the game tab:
+
+    ![image](https://user-images.githubusercontent.com/114284732/206770945-c94f5939-c496-4cb5-8a96-d85ca2cc5af5.png)
+
+- Instructions how to play are hidden in pop up modal:
+
+    ![image](https://user-images.githubusercontent.com/114284732/206770252-6630d7fb-4ebe-4d99-a4c3-ba1ff848903a.png)
+    ![image](https://user-images.githubusercontent.com/114284732/206770296-2adfafac-c1b4-4642-86b6-6aba35949c06.png)
+
+- Modals instead of alarms:
+
+    ![image](https://user-images.githubusercontent.com/114284732/206770419-55169279-2003-498b-a294-47113d758acd.png)
+    
+- Info about missing Java Script:
+    ![image](https://user-images.githubusercontent.com/114284732/206769622-02d53598-a57c-40e9-b185-a14c0ecdf297.png)
+
+- Custom 404 page:
+    ![image](https://user-images.githubusercontent.com/114284732/206769154-a6df8ff6-d40f-4813-9ae2-c5f67ae07c60.png)
 
 ## Future Features
-🚀 **merit & beyond**
-
-Use this section to discuss plans for additional features to be implemented in the future
-
-If you end up not developing some features you hoped to implement, you can include those in this section too.
-
+The plan for the next updates is to add virtual currency and implement betting system for each deal.
 
 ## Testing
-🚨**Required** 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Validation Testing
 🚨**Required** 
