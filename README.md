@@ -1,37 +1,3 @@
-# BLACKJACK GAME
-
-![image](https://user-images.githubusercontent.com/114284732/205451278-ef7537f1-c53f-43a4-97f5-6fd1f31eb790.png)
-
-https://ppindel.github.io/blackjack-game/
-
-Portfolio Project 2
-
-# Author
-Przemyslaw Pindel
-
-# Project Overview
-
-![image](https://user-images.githubusercontent.com/114284732/205451310-5ae7872c-40e5-43d0-bc52-842c86e28672.png)
-
-Blackjack Game is just a simple, relaxing card game perfect for long winter evenings. Get yourself a cup of hot chocolate and try your luck against computer!
-
-## Table of Contents
-
-
-
-## UX
-### Project Goals
-
-Goal of this project is to provide relaxing entertament for a user. Nice to look warm design combined with classic card game.
-
-# OVERVIEW
-
-This template was made as a guide to ensure you cover assessment criteria in your second milestone write up. It is specific to the **PORTFOLIO 2: Javascript Essentials** project. It was based off the [loves maths_readmd.md](https://github.com/Code-Institute-Solutions/readme-love-maths) with a few additions to help elevate you to possible distinction status.
-
-Sections marked as 🚨**Required**  and 🚀 **merit & beyond**
-
-**Please note** that project assessment criteria changes more often than these guides are updated so double-check the submission criteria before assuming the  🚨**Required**  is all you have to do to pass.
-
 ## Helpful tools
 
 Markdown's not all that easy so sometimes you may want to use some tools to make tables. 
@@ -45,29 +11,23 @@ Markdown's not all that easy so sometimes you may want to use some tools to make
 Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a table of contents.  This will help assessors to see the structure of your readme. Just test it out ast this tool isn't perfect. It tends to mess up with special characters like dashes.
 
 ====================================== The Sections you Fill in are below ==============================
+# BLACKJACK GAME
 
-# PROJECT NAME
-🚨**Required** 
+![image](https://user-images.githubusercontent.com/114284732/206716068-2dc16cf3-eda1-4c52-9807-063a97b12b6a.png)
 
-*replace the **PROJECT NAME** header with your project's name*
-- One or two paragraphs providing an overview of your project.
-- Write this as a sales pitch or commercial to entice users to interact with your site or how you want investors to purchase your website.
-- Include a picture of site that shows it in responsive states and links to deployed code: https://ui.dev/amiresponsive
+# Repository
+https://ppindel.github.io/blackjack-game/
 
-## Live Site
-🚨**Required** 
+Portfolio Project 2
 
-- Include a link to deployed project (typically a GitHub Page on github.io)
+# Author
+Przemyslaw Pindel
 
-## Repository
-🚨**Required** 
+# Project Overview
 
-- Include a Link to the GitHub repository
+![image](https://user-images.githubusercontent.com/114284732/206716193-f6232534-36b5-4ae0-ad9f-b14c6b544e2f.png)
 
-## Author
-🚨**Required** 
-
-DEVELOPER_NAME (take credit for the work you do!)
+Blackjack Game is just a simple, relaxing card game perfect for long winter evenings. Get yourself a cup of hot chocolate and try your luck against computer!
 
 ## Table of Contents
 🚀 **merit & beyond**
@@ -77,24 +37,13 @@ Generate after readme is complete by copying and pasting your readme from this p
 **NOTE:** It does have some bugs if you have dashes or trailing spaces in your headers
 
 # UX
-🚀 **merit & beyond**
-
-
-This particular section can be blank, it's just a wrapper for the child sections.
-
-The subsections provide insight into your UX process, focusing on why you made the user experience decisions you did. If the target audience and user base drove you to a certain look and feel call it out so the accessors can't be objective and say I don't like it. 
-
 ## Target Audience
-🚀 **merit & beyond**
-
-Your site is most likely geared to a certain audience, and your design choices should tie into them, pay attention to age groups, genders, demographics, & interests of the people you are hoping to use your site. If it's everyone, say so.
+The game is aimed at people who don't have enough free time to learn complicated rules. It is simple in its construction, the rules are widely known and most users will have no problem understanding it.
 
 ## Project Goals
-🚀 **merit & beyond**
-
-Write bullet points of what this site is trying to achieve.  
-- This site presents X to Y with specific features.
-- Another completely valid project goal is building your skill set with a focus on JavaScript, HTML, and CSS :)
+- Goal of this project is to provide relaxing entertament for a user
+- Nice to look warm design combined with classic card game
+- With Blackjack Game you can satisfy your gambling need in a safe way (without risk of losing money).
 
 ## User Stories
 🚀 **merit & beyond**
