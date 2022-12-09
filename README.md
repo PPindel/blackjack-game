@@ -1,16 +1,3 @@
-## Helpful tools
-
-Markdown's not all that easy so sometimes you may want to use some tools to make tables. 
-
-- [Markdown Cheatsheet](https://guides.github.com/features/mastering-markdown/)
-- [markdown table generator](https://www.tablesgenerator.com/markdown_tables) - used to help with documentation table formatting
-- [mardown table of contents generator](https://ecotrust-canada.github.io/markdown-toc/) - used to create table of contents (be weary it does have some bugs if you have dashes or trailing spaces in your headers)
-- [readme.so](https://readme.so/) - if you don't want to learn markdown, this tool might help you
-
-# Table of Contents
-Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a table of contents.  This will help assessors to see the structure of your readme. Just test it out ast this tool isn't perfect. It tends to mess up with special characters like dashes.
-
-====================================== The Sections you Fill in are below ==============================
 # BLACKJACK GAME
 
 ![image](https://user-images.githubusercontent.com/114284732/206716068-2dc16cf3-eda1-4c52-9807-063a97b12b6a.png)
@@ -30,23 +17,64 @@ Przemyslaw Pindel
 
 ![image](https://user-images.githubusercontent.com/114284732/206716193-f6232534-36b5-4ae0-ad9f-b14c6b544e2f.png)
 
-Blackjack Game is just a simple, relaxing card game perfect for long winter evenings. Get yourself a cup of hot chocolate and try your luck against computer!
+Blackjack Game is just a simple, relaxing card game perfect for long winter evenings. Get yourself a cup of hot chocolate and try your luck against the computer!
 
 ## Table of Contents
-🚀 **merit & beyond**
+- [BLACKJACK GAME](#blackjack-game)
+- [Repository](#repository)
+- [Live Website](#live-website)
+- [Author](#author)
+- [Project Overview](#project-overview)
+  * [Table of Contents](#table-of-contents)
+- [UX](#ux)
+  * [Target Audience](#target-audience)
+  * [Project Goals](#project-goals)
+  * [User Stories](#user-stories)
+    + [As a customer I expect:](#as-a-customer-i-expect-)
+    + [As a developer I expect:](#as-a-developer-i-expect-)
+  * [Design Choices](#design-choices)
+    + [Colors](#colors)
+    + [Typography](#typography)
+    + [Animations and Transitions](#animations-and-transitions)
+  * [Design Elements](#design-elements)
+  * [Wireframes](#wireframes)
+    + [Features](#features)
+  * [Implemented Features](#implemented-features)
+  * [Future Features](#future-features)
+- [Testing](#testing)
+  * [Validation Testing](#validation-testing)
+    + [CSS Validation](#css-validation)
+    + [HTML Validation](#html-validation)
+    + [Javascript Validation](#javascript-validation)
+  * [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
+  * [Manual Testing](#manual-testing)
+    + [Defect Tracking](#defect-tracking)
+    + [Defects of Note](#defects-of-note)
+  * [Outstanding Defects](#outstanding-defects)
+  * [Accessibility](#accessibility)
+    + [Keyboard Navigation](#keyboard-navigation)
+- [Technologies Used](#technologies-used)
+  * [Languages](#languages)
+  * [Frameworks, Libraries & Programs Used](#frameworks--libraries---programs-used)
+- [Deployment](#deployment)
+  * [Run Locally With GitPod](#run-locally-with-gitpod)
+  * [Deploy to GitHub Pages](#deploy-to-github-pages)
+  * [Credits](#credits)
+  * [Content](#content)
+  * [Media](#media)
+  * [Acknowledgments](#acknowledgments)
 
-Generate after readme is complete by copying and pasting your readme from this point & below into this tool:
-- [mardown table of contents generator](https://ecotrust-canada.github.io/markdown-toc/)
-**NOTE:** It does have some bugs if you have dashes or trailing spaces in your headers
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 # UX
 ## Target Audience
 The game is aimed at people who don't have enough free time to learn complicated rules. It is simple in its construction, the rules are widely known and most users will have no problem understanding it.
 
 ## Project Goals
-- Goal of this project is to provide relaxing entertament for a user
+- Goal of this project is to provide relaxing entertainment for a user
 - Nice to look warm design combined with classic card game
-- With Blackjack Game you can satisfy your gambling need in a safe way (without risk of losing money).
+- With Blackjack Game, you can satisfy your gambling need safely (without the risk of losing money).
 
 ## User Stories
 ### As a customer I expect:
@@ -63,16 +91,16 @@ The game is aimed at people who don't have enough free time to learn complicated
 ## Design Choices
 ### Colors
 
-Contrasting theme idea - wooden table in warm and sunny room.
+Contrasting theme idea - wooden table in a warm and sunny room.
 
 ![image](https://user-images.githubusercontent.com/114284732/206725918-884081b0-e7fa-4fc0-98dd-5a8da419346b.png)
 
 ### Typography
 Used fonts: Electrolize and Oleo Script - elegant and easy to read.
-Font style and size was selected to ensure the best readability for the user.
+Font style and size were selected to ensure the best readability for the user.
 
 ### Animations and Transitions
-Buttons are getting bigger and highlited when hovered, getting smaller when pressed down:
+Buttons are getting bigger and highlighted when hovered, getting smaller when pressed down:
 
 ![image](https://user-images.githubusercontent.com/114284732/206765001-2d6430bd-c156-45a0-8a1d-4b0a03ab34ab.png)
 ![image](https://user-images.githubusercontent.com/114284732/206765052-607a3a0c-f1f9-4d5e-9a3b-bd011b3bb611.png)
@@ -80,7 +108,7 @@ Buttons are getting bigger and highlited when hovered, getting smaller when pres
 
 ## Design Elements
 
-Fully responsive design of each card (HTML and CSS built, no images to improve responsivness):
+The fully responsive design of each card (HTML and CSS built, no images to improve responsiveness):
 ![image](https://user-images.githubusercontent.com/114284732/206766312-3012e465-8ccf-440e-9b7f-d2eca159c70c.png)
 
 Custom modals instead of common alarms at the end of the deal:
@@ -95,7 +123,7 @@ Custom modals instead of common alarms at the end of the deal:
 
 ### Features
 ## Implemented Features
-- Easy to navigate, simple one page design with semantic construction - header, main section and footer:
+- Easy to navigate, simple one-page design with semantic construction - header, main section, and footer:
 
     ![image](https://user-images.githubusercontent.com/114284732/206769803-27f99f5d-86e2-4650-ae18-4b0c2b926ea3.png)
     
@@ -103,7 +131,7 @@ Custom modals instead of common alarms at the end of the deal:
 
     ![image](https://user-images.githubusercontent.com/114284732/206769902-3b78b4f0-1cef-4afd-9d75-467477e67ea6.png)
     
-- Simple AI implemented for computer opponent so each game is exciting and satysfing:
+- Simple AI implemented for computer opponent so each game is exciting and satisfying:
 
     ![image](https://user-images.githubusercontent.com/114284732/206770764-4d6263a5-8ed6-4dac-9d28-04721e3f4521.png)
     
@@ -116,11 +144,11 @@ Custom modals instead of common alarms at the end of the deal:
 
     ![image](https://user-images.githubusercontent.com/114284732/206770118-091bf293-d822-4bb9-9dbc-4366758223f3.png)
 
-- Big points are stored locally in JSON file so user doesn't lose progress after closing the game tab:
+- Big points are stored locally in JSON file so the user doesn't lose progress after closing the game tab:
 
     ![image](https://user-images.githubusercontent.com/114284732/206770945-c94f5939-c496-4cb5-8a96-d85ca2cc5af5.png)
 
-- Instructions how to play are hidden in pop up modal:
+- Instructions on how to play are hidden in pop up modal:
 
     ![image](https://user-images.githubusercontent.com/114284732/206770252-6630d7fb-4ebe-4d99-a4c3-ba1ff848903a.png)
     ![image](https://user-images.githubusercontent.com/114284732/206770296-2adfafac-c1b4-4642-86b6-6aba35949c06.png)
@@ -136,26 +164,26 @@ Custom modals instead of common alarms at the end of the deal:
     ![image](https://user-images.githubusercontent.com/114284732/206769154-a6df8ff6-d40f-4813-9ae2-c5f67ae07c60.png)
 
 ## Future Features
-The plan for the next updates is to add virtual currency and implement betting system for each deal.
+The plan for the next updates is to add virtual currency and implement a betting system for each deal.
 
 # Testing
 The site was tested in 4 browsers for Windows PC - Chrome, Firefox, Edge, and Opera. No issues were detected. Safari browser test passed - no issues detected. Mobile browsers tested - Chrome, Firefox, Samsung browser - no issues detected. The site is fully responsive for every size device.
-My friends helped me a lot with game testing so I can assure that the current version is free of bugs, responsive, and it's a lot of fun to play.
+My friends helped me a lot with game testing so I can assure you that the current version is free of bugs, responsive, and it's a lot of fun to play.
 
 ## Validation Testing
 ### CSS Validation
-No errors found in style.css file:
+No errors were found in the style.css file:
 ![image](https://user-images.githubusercontent.com/114284732/206774422-d756cce1-387f-474b-bdf0-787850aef845.png)
 
 ### HTML Validation
-No errors in index.html file:
+No errors in the index.html file:
 ![image](https://user-images.githubusercontent.com/114284732/206774814-4e8872a2-edce-4ae7-952a-26f9eb1be7bb.png)
 
-No errors in 404.html file:
+No errors in the 404.html file:
 ![image](https://user-images.githubusercontent.com/114284732/206775026-74de4ed1-67b4-48c4-b19c-048db28444cf.png)
 
 ### Javascript Validation
-No errors in JS files (script.js and constants.js combined together):
+No errors in JS files (script.js and constants.js combined):
 ![image](https://user-images.githubusercontent.com/114284732/206775994-9b1b0249-6386-485f-bb50-06617539817c.png)
 
 ## Compatibility and Responsive Testing
@@ -173,11 +201,11 @@ Redmi Note 11:
 
 ![image](https://user-images.githubusercontent.com/114284732/206803987-6c5a6768-3608-486e-ae9d-c28ad51084da.png)
 
-Iphone 14 Pro Max:
+iPhone 14 Pro Max:
 
 ![image](https://user-images.githubusercontent.com/114284732/206804113-afb38900-0652-49f7-b407-84bbdc3e88c3.png)
 
-Iphone 8:
+iPhone 8:
 
 ![image](https://user-images.githubusercontent.com/114284732/206804226-12118111-4084-4352-bf50-202c55f79f3d.png)
 
@@ -197,15 +225,15 @@ https://docs.google.com/spreadsheets/d/17U5ND_qIVSv95PoQ_jnpY4RGTwZ9w-D3pBOQB5yG
 
 ### Defect Tracking
 - Fix bug - new game button text overflow with button borders - detected and fixed on 28.11.2022
-- Fix bug when 1st Ace for computer was counted as 11 when it's value was 1 - detected and fixed on 29.11.2022
-- Fix bug when Ace value was changed to 1 until page refresh after receive 2 Aces in starting hand - detected on 29.11.2022 / fixed on 02.12.2022
+- Fix bug when 1st Ace for the computer was counted as 11 when its value was 1 - detected and fixed on 29.11.2022
+- Fix bug when Ace value was changed to 1 until page refresh after receiving 2 Aces in starting hand - detected on 29.11.2022 / fixed on 02.12.2022
 
 ### Defects of Note
-The most frustrating bug to find and remove was situation when computer was losing game and didn't take another card (when he clearly could take one more to win).
-Also implementing variable value of Ace (1 or 11) was a nightmare at the beggining and caused a lot of defects.
+The most frustrating bug to find and remove was the situation when the computer was losing the game and didn't take another card (when he clearly could take one more to win).
+Also implementing the variable value of Ace (1 or 11) was a nightmare at the beginning and caused a lot of defects.
 
 ## Outstanding Defects
-No outstanding bugs known.
+No outstanding bugs are known.
 
 ## Accessibility
 Mobile version:
@@ -216,10 +244,10 @@ Desktop version:
 
 ![image](https://user-images.githubusercontent.com/114284732/206808378-2d7895de-a9c7-4010-baf2-6e50f3d9aa6f.png)
 
-Accessibility score for mobile devices is 97 points due to warning for colors contrast, however I've tested the game on multiple devices and the color contrast is ok in my opinion (my testers (friends :)) agree with me). For desktop it's 100. Aria labels and titles are used in this project.
+The accessibility score for mobile devices is 97 points due to the warning for color contrast, however, I've tested the game on multiple devices and the color contrast is ok in my opinion (my testers (and friends :)) agree with me). For the desktop, it's 100. Aria labels and titles are used in this project.
 
 ### Keyboard Navigation
-Game is keyboard friendly - all navigation tests passed. I've used focus function to bring focus to key buttons and implemented function to close modals with any button on keyboard down.
+The game is keyboard friendly - all navigation tests passed. I've used the focus function to bring focus to key buttons and implemented a function to close modals with any button on the keyboard down.
 
 # Technologies Used
 ## Languages
@@ -230,21 +258,20 @@ Game is keyboard friendly - all navigation tests passed. I've used focus functio
 ## Frameworks, Libraries & Programs Used
 List out the tools you used:
 - Balsamiq
-- Coolors.co
-- fontawesome
-- gitpod
-- github
-- google fonts
-- font awesome
+- coolors.co
+- Font Awesome
+- GitPod
+- GitHub
+- Google fonts
 
 # Deployment
 ## Run Locally With GitPod
 
-To run locally with GitPod we need to type the below command in GitPod terminal:
+To run locally with GitPod we need to type the below command in the GitPod terminal:
 
 ![image](https://user-images.githubusercontent.com/114284732/206723554-9d4db244-05a7-43cc-92bd-d4e262d1a89e.png)
 
-Ten open link with port 8000 in our browser:
+Then open the link with port 8000 in our browser:
 
 ![image](https://user-images.githubusercontent.com/114284732/206723687-8373e2f5-1800-495b-b206-014ff3309488.png)
 
@@ -252,7 +279,7 @@ Ten open link with port 8000 in our browser:
 
 The site was deployed to GitHub pages:
 
-1. Go to GitHub EngineBoostGarage repository then open settings:
+1. Go to the GitHub EngineBoostGarage repository then open settings:
 
   ![image](https://user-images.githubusercontent.com/114284732/206722224-6f434a85-67f5-405a-9130-c4515f36903b.png)
     
@@ -260,7 +287,7 @@ The site was deployed to GitHub pages:
   
   ![image](https://user-images.githubusercontent.com/114284732/206721998-3fbd6628-b6e8-4c34-8713-0451da404950.png)
     
-3. Choose source to deploy from a branch, then select the main branch and save:
+3. Choose a source to deploy from a branch, then select the main branch and save:
 
   ![image](https://user-images.githubusercontent.com/114284732/206722345-3bda90fc-6b09-456d-b47b-e59ac2525c55.png)
   ![image](https://user-images.githubusercontent.com/114284732/206722519-d912b4a6-7129-487e-bde7-deed4d8ed2e6.png)
