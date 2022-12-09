@@ -49,35 +49,27 @@ The game is aimed at people who don't have enough free time to learn complicated
 - With Blackjack Game you can satisfy your gambling need in a safe way (without risk of losing money).
 
 ## User Stories
-🚀 **merit & beyond**
+### As a customer I expect:
+- clear look
+- simply navigation
+- easy to read and functional content
+- the feeling of using a premium product
 
-This section lists outs as a X I want Y, so I can Z format. It helps drive out the features you will build.
-
-You can have many kinds of users so feel free to have one section or the subsections listed or more
-
-### Site User Stories
-🚀 **merit & beyond**
-
-### Website Owner Stories
-🚀 **merit & beyond**
-
-### Developer Stories
-🚀 **merit & beyond**
+### As a developer I expect:
+- easy to read code
+- hassle-free implementation of new features
+- simple adding of new content at the request of the owner
 
 ## Design Choices
-🚀 **merit & beyond**
+### Colors
 
-Your site is most likely geared to a certain audience, and your design choices should tie into them. Let the assessors know your thought process.
+Contrasting theme idea - wooden table in warm and sunny room.
 
-
-You may want to re-watch the videos about the [5 planes of UX development ](https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/22905698f3be425d918ebc64c87801b7/9c295bdc5a4048308460e262b14ab7df/) when writing up this section
+![image](https://user-images.githubusercontent.com/114284732/206725918-884081b0-e7fa-4fc0-98dd-5a8da419346b.png)
 
 ### Typography
-🚀 **merit & beyond**
-
-- discuss font size, font types for headers vs buttons vs general text and how it ties into users' emotions or target audience.
-- Clarity of letters, putting a capital i next to a lower case L is always a good test
-- include screenshots of fonts used and links to the appropriate website ex) https://fonts.google.com/specimen/Raleway
+Used fonts: Electrolize and Oleo Script - elegant and easy to read.
+Font style and size was selected to ensure the best readability for the user.
 
 ### Imagery
 🚀 **merit & beyond**
