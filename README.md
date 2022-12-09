@@ -71,22 +71,24 @@ Contrasting theme idea - wooden table in warm and sunny room.
 Used fonts: Electrolize and Oleo Script - elegant and easy to read.
 Font style and size was selected to ensure the best readability for the user.
 
-### Imagery
-🚀 **merit & beyond**
-
-Explain why you used certain icons and images on your site & tie it back into your target audience
-
 ### Animations and Transitions
-🚀 **merit & beyond**
+Buttons are getting bigger and highlited when hovered, getting smaller when pressed down:
 
-- discuss any special animations or transitions you've included 
-- special hover state effects
+![image](https://user-images.githubusercontent.com/114284732/206765001-2d6430bd-c156-45a0-8a1d-4b0a03ab34ab.png)
+![image](https://user-images.githubusercontent.com/114284732/206765052-607a3a0c-f1f9-4d5e-9a3b-bd011b3bb611.png)
+![image](https://user-images.githubusercontent.com/114284732/206765243-73a33f85-3e2a-414f-b791-636525569097.png)
 
 ## Design Elements
-🚀 **merit & beyond**
 
-what are some of they key User Interactive elements and bits of functionally you will have on your site:
-tables, accordions, maps, videos, forms with inputs, text areas, select/dropdowns
+Fully responsive design of each card (HTML and CSS built, no images to improve responsivness):
+![image](https://user-images.githubusercontent.com/114284732/206766312-3012e465-8ccf-440e-9b7f-d2eca159c70c.png)
+
+Custom modals instead of common alarms at the end of the deal:
+
+![image](https://user-images.githubusercontent.com/114284732/206765578-41ff10fb-92a6-4a79-8659-b30d3a2e207d.png)
+![image](https://user-images.githubusercontent.com/114284732/206765420-54ef6add-c682-4e87-9333-fbd3d112f72d.png)
+![image](https://user-images.githubusercontent.com/114284732/206765464-547e7e25-7cfb-45a7-a9bc-462ab2e73a05.png)
+![image](https://user-images.githubusercontent.com/114284732/206765500-bee3da79-b6a7-4454-b2d7-2c3f0fe657e5.png)
 
 ## Wireframes
 🚀 **merit & beyond**
