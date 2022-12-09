@@ -139,6 +139,7 @@ Custom modals instead of common alarms at the end of the deal:
 The plan for the next updates is to add virtual currency and implement betting system for each deal.
 
 # Testing
+The site was tested in 4 browsers for Windows PC - Chrome, Firefox, Edge, and Opera. No issues were detected. Safari browser test passed - no issues detected. Mobile browsers tested - Chrome, Firefox, Samsung browser - no issues detected. The site is fully responsive for every size device.
 My friends helped me a lot with game testing so I can assure that the current version is free of bugs, responsive, and it's a lot of fun to play.
 
 ## Validation Testing
@@ -158,92 +159,53 @@ No errors in JS files (script.js and constants.js combined together):
 ![image](https://user-images.githubusercontent.com/114284732/206775994-9b1b0249-6386-485f-bb50-06617539817c.png)
 
 ## Compatibility and Responsive Testing
-🚨**Required** 
+As the biggest market share in Ireland belongs to Chrome and Safari, I focused on these two browsers and didn't forget about others too.
 
-1. Visit https://gs.statcounter.com/browser-market-share to figure out the most popular browsers & operating system combos seen across the we for the geographic region, and platoform(s) and screen sizes you expect your users to belong to. 
+Samsung S22 Ultra:
 
-1. Include a sentence about why you chose the combinations you did.
+![image](https://user-images.githubusercontent.com/114284732/206803649-953aa452-07e0-4ecc-9f48-48f8253aa6c1.png)
 
-1. Create a table that lists out what devices, browsers, and operating system you tested your application on and a brief description of why you chose the mixture you did. The point is to prove that you looked at the site across various browsers, operating systems, and viewport breakpoints. [markdown table generator](https://www.tablesgenerator.com/markdown_tables)
+Samsung Galaxy A10:
 
-1. if you can't find the brower/device/OS combinations you want on Browserstack with your github student webpack (or you didn't activate that in time), note what you'd ideally test on then what you ended up testing on as a compromise. 
+![image](https://user-images.githubusercontent.com/114284732/206803866-77c11274-3ecf-409b-89bc-6ead068a90fc.png)
 
-| TOOL / Device                 | BROWSER     | OS         | SCREEN WIDTH  |
-|-------------------------------|-------------|------------|---------------|
-| real phone: motog6            | chrome      | android    | XS 360 x 640  |
-| browser stack: iPhone5s       | safari      | iOs        | XS 320 x 568  |
-| dev tools emulator: pixel 2   | firefox     | android    | SM 411 x 731  |
-| browserstack: iPhone 10x      | Chrome      | iOs        | SM 375 x 812  |
-| browserstack: nexus 7 - vert  | Chrome      | android    | M 600 x 960   |
-| real tablet: ipad mini - vert | safari      | iOs        | M 768 x 1024  |
-| browserstack: nexus 7 - horiz | firefox     | android    | LG 960 x 600  |
-| chrome emulator: ipad - horiz | safari      | iOs        | LG 1024 x 768 |
-| browserstack                  | Chrome      | windows    | XL 1920 x 946 |
-| real computer: mac book pro   | safari 12.1 | Mohave     | XL 1400 x 766 |
-| browserstack                  | IE Edge 88  | windows 10 | XL 1920 x 964 |
+Redmi Note 11:
+
+![image](https://user-images.githubusercontent.com/114284732/206803987-6c5a6768-3608-486e-ae9d-c28ad51084da.png)
+
+Iphone 14 Pro Max:
+
+![image](https://user-images.githubusercontent.com/114284732/206804113-afb38900-0652-49f7-b407-84bbdc3e88c3.png)
+
+Iphone 8:
+
+![image](https://user-images.githubusercontent.com/114284732/206804226-12118111-4084-4352-bf50-202c55f79f3d.png)
+
+Ipad Pro 12.9:
+
+![image](https://user-images.githubusercontent.com/114284732/206804368-5e56d308-ba31-4cfa-8789-d0ae23fe9862.png)
+
+Mac:
+
+![image](https://user-images.githubusercontent.com/114284732/206804502-000b2fed-e69b-4e16-840d-6dfe733bb29a.png)
+
 
 ## Manual Testing
-🚨**Required** 
+https://docs.google.com/spreadsheets/d/17U5ND_qIVSv95PoQ_jnpY4RGTwZ9w-D3pBOQB5yGjtA/edit?usp=sharing
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. 
-
-There are 3 ways you can document your testing:
-
-**1. Markdown**
-
-Describing your testing process is via scenarios, right here such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-**2. Use Spreadsheets**    
-
-Here is a [Manual Testing Template](https://docs.google.com/spreadsheets/d/1vc1IVL-ydQwWeWMqnk_GRox6HE6qxDLpchGse8Crayo/edit#gid=296578096) that you can use as a starting point to keep track of your testing efforts. Make a copy of it in your own account and update as needed to reflect the browsers you are testing and features.  
-
-**3.Use Github Agile Tools**
-
-Create Custom Issue Template and A Project Board in git hub.[Here's a brief overview](https://docs.google.com/document/d/1nDS5tZeMO77Dfq85IZGMSV6C41XaPm9FwcpR3k-UTVc/edit?usp=sharing) I put together on how to do this
-
-It's ok to spot check specific functionality across devices and browsers but each page should be viewed as a whole for each device/browser combo at least once too.
-
-A quick way to check if items are exceeding the screen width of a project is to run this javascript in the console for various screen emulations:
-
-```
-var docWidth = document.documentElement.offsetWidth;
-[].forEach.call(document.querySelectorAll('*'),function(el){if(el.offsetWidth > docWidth){console.log(el);}});
-```
-
+![image](https://user-images.githubusercontent.com/114284732/206806666-e8820cf8-8715-485d-b978-c5b28867bbfc.png)
 
 ### Defect Tracking
-🚨**Required** 
-
-Try to create issues in real time as it better reflects the daily life of a developer.
-
-GitHub has an issues bar that helps you track things pretty quickly. Here's a [guide to GitHub Defects](Defects.md)
-
-You could do track them as bullet items in this document, or create a google speadsheet too. 
+- Fix bug - new game button text overflow with button borders - detected and fixed on 28.11.2022
+- Fix bug when 1st Ace for computer was counted as 11 when it's value was 1 - detected and fixed on 29.11.2022
+- Fix bug when Ace value was changed to 1 until page refresh after receive 2 Aces in starting hand - detected on 29.11.2022 / fixed on 02.12.2022
 
 ### Defects of Note
-🚀 **merit & beyond**
-
-Some defects are more pesky than others. Highlight 3-5 of the bugs that drove you the most nuts and link to them directly here.
-
+The most frustrating bug to find and remove was situation when computer was losing game and didn't take another card (when he clearly could take one more to win).
+Also implementing variable value of Ace (1 or 11) was a nightmare at the beggining and caused a lot of defects.
 
 ## Outstanding Defects
-🚨**Required** 
-
-It's ok to not resolve all the defects you found as long as:
-- it does not impact a user from completing a vital function on the website
-- it only affects a very small subset of users
-- is an extreme edge case that very few users would try
-- there is an open issue against a framework, browser or technology used
-
-If you know of something that isn't quite right, create an issue and link to it here and explain why you chose not to resolve it. 
-
-Sometimes it's as simple, word wrapping issue that makes the site look odd at a certain screensize that you just didn't have time to fix due to the impending deadline it's best to mention it but note why you allowed it to go live: "Yes it looks odd, but it doesn't impact core functionality of the site." than to let the accessors think you didn't notice it. 
+No outstanding bugs known.
 
 ## Core Web Vitals
 🚀 **merit & beyond**
