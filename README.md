@@ -138,72 +138,24 @@ Custom modals instead of common alarms at the end of the deal:
 ## Future Features
 The plan for the next updates is to add virtual currency and implement betting system for each deal.
 
-## Testing
-
+# Testing
+My friends helped me a lot with game testing so I can assure that the current version is free of bugs, responsive, and it's a lot of fun to play.
 
 ## Validation Testing
-🚨**Required** 
-
-In this section you should write up any websites you used to validate your code and include screenshots.
-
-**Validation issues are an automatic failure** You should run these about 3 times:
-- when you first deploy your site
-- just when you think you are done testing
-- right before you submit because 😼, ⚽, 🐶 & 👼 can eliminate a closing tag or curly bracket without you noticing.
-
 ### CSS Validation
-🚨**Required** 
-
-If you only have one CSS file used on all pages, you only need to run this once for your deployed url, but if you have different files for different pages, run it by direct input per file.
-
-- include a screenshot for each CSS file which includes the Green no ERRORS bar,  two check marks
-
-[CSS validator](https://jigsaw.w3.org/css-validator/)
-
-**styles.css**
-![img.png](documentation/images/css-validation.png)
+No errors found in style.css file:
+![image](https://user-images.githubusercontent.com/114284732/206774422-d756cce1-387f-474b-bdf0-787850aef845.png)
 
 ### HTML Validation
-🚨**Required** 
+No errors in index.html file:
+![image](https://user-images.githubusercontent.com/114284732/206774814-4e8872a2-edce-4ae7-952a-26f9eb1be7bb.png)
 
-If you only have one HTML file for your project, you only need to run this once for your deployed url, but if you have different files even for a thankyou or 404, run it by direct input per file or by deployed url per file.
-
-- include a screenshot for each HTML file with the Blue Nu Html checker down to the blue checking complete bit. It's ok to have info and warnings. 
-- You may need a scrolling screenshot to capture this one. I tend to use the [GoFullPage extension in chrome](https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl):
-
-[HTML Validator](https://validator.w3.org/)
-
-**index.html**
-![img.png](documentation/images/index-html-validation.png)
-
-**404.html**
-![img.png](documentation/images/404-html-validation.png)
+No errors in 404.html file:
+![image](https://user-images.githubusercontent.com/114284732/206775026-74de4ed1-67b4-48c4-b19c-048db28444cf.png)
 
 ### Javascript Validation
-🚨**Required** 
-
-This validator requires you to copy in your code. For each JavaScript file:
-
-- include a screenshot of the JS panel and the right-hand panel that shows now errors. 
-
-If you have tons of warnings about spacing and semicolons, right,click your file to format in gitPod and see if that helps. If you have a warning about ES6 or 7 add this to the top of your file:
-- `/*jshint esversion: 6 */ `
-
-[JS validation](https://jshint.com) 
-
-**pie.js**
-![img_3.png](img_3.png)
-
-### Javascript Validation
-🚨**Required** 
-If you chose to store data in a .json file, you should validate it too.
-
-For each file copy the code into the validator site and include a screenshot
-
-[JSON validation](https://jsonlint.com/) 
-
-**data.json**
-![img_2.png](img_2.png)
+No errors in JS files (script.js and constants.js combined together):
+![image](https://user-images.githubusercontent.com/114284732/206775994-9b1b0249-6386-485f-bb50-06617539817c.png)
 
 ## Compatibility and Responsive Testing
 🚨**Required** 
