@@ -377,41 +377,32 @@ List out the tools you used with a link and a short description (this helps othe
 - markdown table generator
 
 # Deployment
-🚨**Required** 
+## Run Locally With GitPod
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages).
+To run locally with GitPod we need to type the below command in GitPod terminal:
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any.
+![image](https://user-images.githubusercontent.com/114284732/206723554-9d4db244-05a7-43cc-92bd-d4e262d1a89e.png)
 
-Remember to use proper markdown for commands and enumerated steps.
+Ten open link with port 8000 in our browser:
 
-
-You may want to re-watch the [initial deployment in gitpod video](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/9b06129195c64fada6783de9cfe82d60/) when writing up this section.
+![image](https://user-images.githubusercontent.com/114284732/206723687-8373e2f5-1800-495b-b206-014ff3309488.png)
 
 ## Deploy to GitHub Pages
-🚨**Required** 
 
-Write out steps you would take and test them to deploy your code to GitHub Pages, include screenshots if you think they would make the process easier.
-
-## Forking The Repository
-🚀 **merit & beyond**
-
-A fork creates a completely independent copy of Git repository. In contrast to a fork, a Git clone creates a linked copy that will continue to synchronize with the target repository, so if you want to ensure other people don't commit to your public repo, you might want to tell them to fork the repository :) 
-
-## Run Locally With GitPod
 The site was deployed to GitHub pages:
 
 1. Go to GitHub EngineBoostGarage repository then open settings:
 
-  ![obraz](https://user-images.githubusercontent.com/114284732/195993317-61729a82-8f91-438b-93c5-cc751428002f.png)
+  ![image](https://user-images.githubusercontent.com/114284732/206722224-6f434a85-67f5-405a-9130-c4515f36903b.png)
     
 2. Select pages:
   
-  ![obraz](https://user-images.githubusercontent.com/114284732/195993351-ee95f76f-48c1-4c01-9a6c-b6c0ede121a5.png)
+  ![image](https://user-images.githubusercontent.com/114284732/206721998-3fbd6628-b6e8-4c34-8713-0451da404950.png)
     
 3. Choose source to deploy from a branch, then select the main branch and save:
 
-  ![obraz](https://user-images.githubusercontent.com/114284732/195993404-aa51e712-2ef2-4ead-87ee-6e7b98240704.png)
+  ![image](https://user-images.githubusercontent.com/114284732/206722345-3bda90fc-6b09-456d-b47b-e59ac2525c55.png)
+  ![image](https://user-images.githubusercontent.com/114284732/206722519-d912b4a6-7129-487e-bde7-deed4d8ed2e6.png)
 
 ## Credits
 - https://learn.codeinstitute.net/ - Love Maths project and other lessons
