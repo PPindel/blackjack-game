@@ -16,6 +16,9 @@ Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a tab
 ![image](https://user-images.githubusercontent.com/114284732/206716068-2dc16cf3-eda1-4c52-9807-063a97b12b6a.png)
 
 # Repository
+https://github.com/PPindel/blackjack-game
+
+# Live Website
 https://ppindel.github.io/blackjack-game/
 
 Portfolio Project 2
@@ -396,32 +399,44 @@ Write out steps you would take and test them to deploy your code to GitHub Pages
 A fork creates a completely independent copy of Git repository. In contrast to a fork, a Git clone creates a linked copy that will continue to synchronize with the target repository, so if you want to ensure other people don't commit to your public repo, you might want to tell them to fork the repository :) 
 
 ## Run Locally With GitPod
-🚀 **merit & beyond**
+The site was deployed to GitHub pages:
 
-Enumerate and write the steps of how to run a project locally via gitPod. Include Screenshots to maximize the impact of the instructions.
+1. Go to GitHub EngineBoostGarage repository then open settings:
 
-# Credits
-🚨**Required** 
+  ![obraz](https://user-images.githubusercontent.com/114284732/195993317-61729a82-8f91-438b-93c5-cc751428002f.png)
+    
+2. Select pages:
+  
+  ![obraz](https://user-images.githubusercontent.com/114284732/195993351-ee95f76f-48c1-4c01-9a6c-b6c0ede121a5.png)
+    
+3. Choose source to deploy from a branch, then select the main branch and save:
 
-To avoid plagiarism amd copyright infringement, you should mention any other projects, stackoverflow, videos, blogs, etc that you used to gather imagery or ideas for your code even if you used it as a starting point and modified things. Giving credit to other people's efforts and ideas that saved you time acknowledges the hard work others did. 
+  ![obraz](https://user-images.githubusercontent.com/114284732/195993404-aa51e712-2ef2-4ead-87ee-6e7b98240704.png)
+
+## Credits
+- https://learn.codeinstitute.net/ - Love Maths project and other lessons
+- https://flaviocopes.com/how-to-shuffle-array-javascript/ - shuffling array function
+- https://stackoverflow.com/ - code inspirations
+- https://www.w3schools.com/ - code inspirations
 
 ## Content
-🚨**Required** 
-
-Use bullet points to list out sites you copied text from and cross-reference where those show up on your site
+- https://www.cs.mcgill.ca/~rwest/wikispeedia/wpcd/wp/b/Blackjack.htm - how to play section
 
 ## Media
-🚨**Required** 
-
-Make a list of sites you used images from. If you used several sites try to match up each image to the correct site. This includes attribution for icons if they came from font awesome or other sites, give them credit.
-
-You should not be using images taken from copyrighted sites, but only royalty free ones. Try typing `!copyright` in slack and see what help it gives you for this topic.
+- https://www.pexels.com - Ace of spades logo img and favicon
+- https://fontawesome.com/ - icons
+- https://fontjoy.com/ - font pairing
+- https://coolors.co/ - colors combination
 
 ## Acknowledgments
-🚀 **merit & beyond**
 
-This is the section where you refer to code examples, mentors, blogs, stack overflow answers and videos that helped you accomplish your end project. Even if it's an idea that you updated you should note the site and why it was important to your completed project.
+Big thanks to Malia Havlicek - Code Institute mentor for her ideas and support in this project!
+Also, I would like to thank all my friends for live testing the game!
 
-If you used a CodeInstitute Example project as a starting point. Make note of that here.
-
-
+- https://gs.statcounter.com/ - browser market share for Ireland
+- https://www.browserstack.com/ - Safari browser testing tool
+- https://ui.dev - responsiveness testing
+- https://validator.w3.org/ - HTML validator
+- https://jigsaw.w3.org/ - CSS validator
+- https://jshint.com/ - JS validator
+- https://web.dev - performance testing
