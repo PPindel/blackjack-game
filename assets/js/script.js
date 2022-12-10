@@ -77,13 +77,13 @@ function checkResult() {
     for (let c = 0; c < currentUserCards.length; c++) {
         userScore += parseInt(currentUserCards[c]);
     }
-    //console.log("User score: " + userScore); /* Testing */
+
     document.getElementById("userHand").innerHTML = userScore;
 
     for (let d = 0; d < currentCpuCards.length; d++) {
         cpuScore += parseInt(currentCpuCards[d]);
     }
-    //console.log("CPU score: " + cpuScore); /* Testing */
+
     document.getElementById("cpuHand").innerHTML = cpuScore;
 
     //alert (modal) based on result
@@ -164,7 +164,6 @@ function incrementUserPoints() {
     document.getElementById("userPoints").innerText = ++userPoints;
     savedScore.gamesWon++;
     localStorage.setItem(savedScore, JSON.stringify(savedScore));
-    //console.log(JSON.parse(localStorage.getItem(savedScore)));
 }
 
 /**
@@ -175,7 +174,6 @@ function incrementCpuPoints() {
     document.getElementById("cpuPoints").innerText = ++cpuPoints;
     savedScore.gamesLost++;
     localStorage.setItem(savedScore, JSON.stringify(savedScore));
-    //console.log(JSON.parse(localStorage.getItem(savedScore)));
 }
 
 /**
@@ -320,17 +318,6 @@ window.onclick = function (event) {
     }
 };
 
-/**
- * Toggles on instructions how to play the game
-function toggleInfo() {
-    let infoText = document.getElementById("instructions");
-    if (infoText.style.display === "block") {
-        infoText.style.display = "none";
-    } else {
-        infoText.style.display = "block";
-    }
-}*/
-
 // Button listeners
 hitButton.addEventListener("click", function () {
     drawCards();
@@ -340,9 +327,5 @@ hitButton.addEventListener("click", function () {
 stayButton.addEventListener("click", stayButtonAction);
 
 newGameButton.addEventListener("click", runGame);
-
-/* old info button
-let infoButton = document.getElementById("infoButton");
-infoButton.addEventListener("click", toggleInfo); */
 
 document.addEventListener("DOMContentLoaded", runGame);

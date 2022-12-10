@@ -199,13 +199,6 @@ body {
     transform: scale(0.9);
 }
 
-/* Old info button content
-#instructions {
-    display: none;
-    font-size: 110%;
-    padding: 1%;
-} */
-
 footer {
     margin-top: 2%;
 }
@@ -329,8 +322,6 @@ footer {
     .topLeft {
         margin-top: -50%;
     }
-
-
 
     #questionMarkStyle {
         margin-top: 35%;
