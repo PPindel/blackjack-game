@@ -73,6 +73,7 @@ body {
     background-color: #E7DFC6;
     font-size: x-large;
     margin: 10px;
+    cursor: pointer;
 }
 
 .buttons:hover {
@@ -189,6 +190,7 @@ body {
     height: auto;
     width: auto;
     background-color: #E7DFC6;
+    cursor: pointer;
 }
 
 #infoButton:hover {
