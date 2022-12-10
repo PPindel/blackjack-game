@@ -221,7 +221,7 @@ Mac:
 ## Manual Testing
 https://docs.google.com/spreadsheets/d/17U5ND_qIVSv95PoQ_jnpY4RGTwZ9w-D3pBOQB5yGjtA/edit?usp=sharing
 
-![image](https://user-images.githubusercontent.com/114284732/206806666-e8820cf8-8715-485d-b978-c5b28867bbfc.png)
+![image](https://user-images.githubusercontent.com/114284732/206879701-2dd1f02e-d479-4d59-9daf-1a348a6988eb.png)
 
 ### Defect Tracking
 - Fix bug - new game button text overflow with button borders - detected and fixed on 28.11.2022
