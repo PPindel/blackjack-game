@@ -233,7 +233,7 @@ The most frustrating bug to find and remove was the situation when the computer 
 Also implementing the variable value of Ace (1 or 11) was a nightmare at the beginning and caused a lot of defects.
 
 ## Outstanding Defects
-No outstanding bugs are known.
+This is possible to break the game score if the user goes to local storage files and changes the values stored for something not expected. Need to implement function preventing manipulation with local storage file.
 
 ## Accessibility
 Mobile version:
@@ -248,6 +248,8 @@ The accessibility score for mobile devices is 97 points due to the warning for c
 
 ### Keyboard Navigation
 The game is keyboard friendly - all navigation tests passed. I've used the focus function to bring focus to key buttons and implemented a function to close modals with any button on the keyboard down.
+
+![ScreenRecorderProject1](https://user-images.githubusercontent.com/114284732/206880887-ca21fc7f-8c07-4584-98b6-c7cc239f44d0.gif)
 
 # Technologies Used
 ## Languages
